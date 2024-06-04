@@ -6,4 +6,3 @@
 
   @includeIf('modules.' . $module['acf_fc_layout'], ['data' => $module])
 @endforeach
-  
