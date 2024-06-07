@@ -1,0 +1,30 @@
+body {
+    background-color: white;
+}
+
+
+nav ul,
+nav ul li {
+
+    @apply text-lg transition relative;
+
+}
+
+nav ul li ul{
+
+    @apply bg-slate-100 hidden space-y-20;
+
+    li {
+        @apply bg-slate-100 absolute p-2 w-auto inline-block;
+    }
+}
+
+nav ul li:hover ul{
+
+    @apply block;
+}
+
+nav ul li:hover {
+
+    @apply hover:text-red-600;
+}

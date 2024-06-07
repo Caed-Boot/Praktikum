@@ -8,7 +8,7 @@
  */
 
 // SIEMPRE OBSERVAR QUE SEA "EXPORT DEFAULT"  Y QUE NO SEA "MODULE.EXPORTS" 
-export default async (app) => {
+module.exports = async (app) => {
   /**
    * Application assets & entrypoints
    *

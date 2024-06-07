@@ -7,7 +7,14 @@ const config = {
   theme: {
     extend: {
       colors: {}, // Extend Tailwind's default colors
+      animation: {
+        fade: 'fadeIn .5s ease-in',
+      },
+      transitionProperty: {
+        'height': 'height',
+      },
     },
+
   },
   plugins: [
     require('flowbite/plugin')

@@ -1,42 +1,34 @@
-
-@dump($data);
-
 @php
-  $title = isset($data['title']) ? $data['title'] : '';
-  $text = isset($data['text']) ? $data['text'] : '';
-  $image = isset($data['image']) ? $data['image'] : '';
-  $imageSrc = isset($data['image']['url']) ? $data['image']['url'] : '';
+    $title = isset($data['title']) ? $data['title'] : '';
+    $text = isset($data['text']) ? $data['text'] : '';
+    $image = isset($data['image']) ? $data['image'] : '';
+    $imageSrc = isset($data['image']['url']) ? $data['image']['url'] : '';
+    $order = isset($data['radio_button']) ? $data['radio_button'] : '';
+    
+    if ($order == 'rechts') {
+        $order = 1;
+        $position = 'left';
+    } else {
+        $order = 0;
+        $position = 'right';
 
-  $button = isset($data['button']) ? $data['button'] : '';
+    }
 @endphp
-{{-- @dd($image) --}}
 
-{{-- @dd($image) --}}
-{{-- !! AUSRUFEZEICHEN !! --}}
-{{-- SE UTILIZA PARA QUE ME TRAIGA LOS DATOS SIN TAGS --}}
-{{-- {!! $text !!} --}}
+<section class="flex flex-col my-4 p-4 md:p-10 section-img">
 
-{{-- <a href=" {{ $button['url'] }} ">
-    {{ $button['title'] }}
-</a> --}}
+    <div>
+        <h2 class="basis-1/4 mb-4 text-2xl text-slate-900 font-semibold md:text-3xl lg:text-3xl lg:pl-10">
+            {{ $title }}
+        </h2>
+        <article class="flex flex-col justify-center gap-10 md:items-start space-y-6 md:flex-row md:text-lg ">
+        <img src="{{ $imageSrc }}" class=" bg-no-repeat bg-cover object-cover md:order-{{ $order }}  max-w-96 h-96 md:w-1/2 ">
+            <div class=" flex flex-col items-start justify-center text-justify space-y-6 md:w-1/2 ">
+                  @include('modules.text')
+            </div>
+        </article> 
+    </div>
 
-@if($button || $title )
-    <a href="{{ $button['url'] }}" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"> {{ $button['title'] }} </a>
-@endif
-
-
-<section class="flex flex-col m-6 p-6">
-    <h1 class="basis-1/4 text-3xl">
-        {{ $title }}
-
-    </h1>
-    <article class="flex basis-1/4 p-3 gap">
-        <img src="{{ $imageSrc }}" alt="" class=" w-1/2">
-        <div class=" flex flex-col">
-            <h2 class=" text-3xl"> subtitle</h2>
-            <p class=" text-3xl">
-              {!! $text !!} 
-            </p>
-        </div>
-    </article> 
+    @include('modules.button')
 </section>
+
