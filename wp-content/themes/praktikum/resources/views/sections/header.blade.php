@@ -25,7 +25,7 @@
             </button>
            {{-- Burger menu --}}  
           </div>
-          <div class="h-0 overflow-hidden bg-white absolute left-0 top-[63px] w-full animate-fade md:block md:w-auto md:h-auto md:relative md:top-0" id="navbar-default">
+          <div class="h-0 overflow-hidden bg-white absolute left-0 top-[63px] w-full animate-fade transition-all md:block md:w-auto md:h-auto md:relative md:top-0" id="navbar-default">
                 {!! wp_nav_menu([
                   'theme_location' => 'primary_navigation',
                   'menu_class' => 'nav flex flex-col  items-center space-x-4 text-black font-semibold md:flex-row',

@@ -5,7 +5,11 @@ function initBurgerMenu () {
 
     button.addEventListener('click', (event) => {
         event.preventDefault()
-        navBar.classList.toggle('h-0')
+
+        navBar.classList.toggle('h-[150px]')
+        // if (navBar.contains('h-0')) {
+        //     navBar.classList.remove('h-0')
+        // }
     })
 }
 

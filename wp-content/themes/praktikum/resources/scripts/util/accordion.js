@@ -35,12 +35,19 @@ function initAccordion () {
                 // Compare them
                 if (lastStringTitle === lastStringBody) {
                     body.classList.toggle('h-0')
+                    body.classList.toggle('h-[300px]')
                     body.classList.toggle('overflow-hidden')
-                    setTimeout(() => {
-                        body.classList.remove('opacity-0');
-                        body.classList.add('animate-fade');
-                      }, 300);
+                    if (body.classList.contains('opacity-0')) {
+                        setTimeout(() => {
+                            body.classList.remove('opacity-0');
+                            body.classList.add('animate-fade');
+                          }, 300);
+                    } else {
+                        body.classList.remove('animate-fade');
+                        body.classList.add('opacity-0');
+                        
                     }
+                } 
             })
 
         })
