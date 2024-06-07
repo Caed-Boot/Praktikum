@@ -1,23 +1,25 @@
 function mediaTextObserver () {
 
-    const section = document.querySelector('.section-img')
+
+
+    const section = document.querySelectorAll('.section-img')
     const loadImage = (entries, observer) => {
-    
+
         entries.forEach(entry => {
-            
+        
             if(entry.isIntersecting) {
-                console.log(' la imagen esta en el viewport')
+                entry.target.classList.remove('opacity-0')
             }
         });
     } 
     
     const observer = new IntersectionObserver(loadImage, {
         root: null,
-        rootMargin:'-100px',
+        rootMargin:'10px',
         threshold: 1.0
     })
     
-    observer.observe(section)
+    section.forEach((target) => observer.observe(target))
 }
 
 

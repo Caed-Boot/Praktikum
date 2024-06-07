@@ -15,7 +15,7 @@
     }
 @endphp
 
-<section class="flex flex-col my-4 p-4 md:p-10 section-img">
+<section class="flex flex-col my-4 p-4 md:p-10 opacity-0 section-img">
 
     <div>
         <h2 class="basis-1/4 mb-4 text-2xl text-slate-900 font-semibold md:text-3xl lg:text-3xl lg:pl-10">
