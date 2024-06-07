@@ -32,12 +32,14 @@ function initAccordion () {
                 // Call the function and put body as parameter inside
                 // save in a variable
                 const lastStringBody = obtainLastString(body)
-                
                 // Compare them
                 if (lastStringTitle === lastStringBody) {
-                    
                     body.classList.toggle('h-0')
-                    body.classList.toggle('overflow-visible')
+                    body.classList.toggle('overflow-hidden')
+                    setTimeout(() => {
+                        body.classList.remove('opacity-0');
+                        body.classList.add('animate-fade');
+                      }, 300);
                     }
             })
 

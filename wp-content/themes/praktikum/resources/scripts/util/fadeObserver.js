@@ -8,7 +8,12 @@ function mediaTextObserver () {
         entries.forEach(entry => {
         
             if(entry.isIntersecting) {
-                entry.target.classList.remove('opacity-0')
+            
+                setTimeout(() => {
+                    entry.target.classList.remove('opacity-0');
+                    entry.target.classList.add('animate-fade');
+                }, 300);
+
             }
         });
     } 

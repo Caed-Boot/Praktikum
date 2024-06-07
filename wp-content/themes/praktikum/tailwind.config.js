@@ -10,6 +10,12 @@ const config = {
       animation: {
         fade: 'fadeIn .5s ease-in',
       },
+      keyframes: {
+        fadeIn: {
+          from: { opacity: 0 },
+          to: { opacity: 1 },
+        },
+      },
       transitionProperty: {
         'height': 'height',
       },

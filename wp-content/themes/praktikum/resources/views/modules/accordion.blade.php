@@ -20,7 +20,7 @@
         </h2>
 
 
-        <div id="accordion-collapse-body-{{ $bodyId }}" class="h-0 overflow-hidden transition-height duration-500 ease-in-out accordion-body">
+        <div id="accordion-collapse-body-{{ $bodyId }}" class="h-0 opacity-0 overflow-hidden transition-height duration-500 ease-in-out accordion-body">
             <div class="p-5 border border-b-0 border-gray-200 space-y-4">
                 {!! $text !!}
             </div>
