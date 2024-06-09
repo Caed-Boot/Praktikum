@@ -34,8 +34,8 @@ function initAccordion () {
                 const lastStringBody = obtainLastString(body)
                 // Compare them
                 if (lastStringTitle === lastStringBody) {
-                    body.classList.toggle('h-0')
-                    body.classList.toggle('h-[300px]')
+                    body.classList.toggle('h-[0%]')
+                    body.classList.toggle('h-[500px]')
                     body.classList.toggle('overflow-hidden')
                     if (body.classList.contains('opacity-0')) {
                         setTimeout(() => {

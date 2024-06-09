@@ -3,4 +3,5 @@
 @import 'tailwindcss/utilities';
 
 @import '/scss/_navigation.scss';
-@import 'scss/_slider.scss'
+@import 'scss/_slider.scss';
+@import '/scss/_mediaQueries.scss';
