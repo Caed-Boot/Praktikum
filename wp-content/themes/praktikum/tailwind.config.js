@@ -10,6 +10,9 @@ const config = {
       animation: {
         fade: 'fadeIn .5s ease-in',
       },
+      fontFamily: {
+        'spartan': ['"Spartan-Regular"', '"sans-serif"'],
+      },
       keyframes: {
         fadeIn: {
           from: { opacity: 0 },

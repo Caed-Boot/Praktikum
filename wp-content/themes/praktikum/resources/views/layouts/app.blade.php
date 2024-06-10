@@ -18,7 +18,7 @@
 
       @include('sections.header')
 
-      <main id="main" class="main">
+      <main id="main" class=" w-10/12 mx-auto  main">
         @yield('content')
       </main>
 

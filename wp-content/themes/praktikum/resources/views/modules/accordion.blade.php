@@ -13,7 +13,7 @@
 
         {{-- Button --}}
         <h2 id="accordion-collapse-heading-{{ $openId }}" class="accordion-title">
-            <button type="button" class="flex items-center justify-between text-xl w-4/6 m-auto p-5 font-medium rtl:text-right text-gray-800 border-b border-b-black lg:text-2xl focus:ring-4 focus:ring-gray-200 hover:bg-gray-100 gap-3 transition-colors" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-">
+            <button type="button" class="w-8/12 flex items-center justify-between text-xl m-auto p-5 font-medium rtl:text-right text-gray-800 border-b border-b-black lg:text-2xl focus:ring-4 focus:ring-gray-200 hover:bg-gray-100 gap-3 transition-colors" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-">
                 <span> {{ $title }} </span>
                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
