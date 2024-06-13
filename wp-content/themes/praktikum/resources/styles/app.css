@@ -4,8 +4,8 @@
 
 @import '/scss/_navigation.scss';
 @import 'scss/_slider.scss';
-@import '/scss/_mediaQueries.scss';
 @import '/scss/_imageText.scss';
+@import '/scss/_mediaQueries.scss';
 
 a {
     color: #b5131d;
