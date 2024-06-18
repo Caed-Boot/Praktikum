@@ -1,21 +1,13 @@
 @media(min-width:768px) {
 
-    .subtitle{
+   .infos {
 
-        font-size: 2.25rem;
-        line-height: 2.25rem;
-    }
-}
+        h2 {
+            @apply text-4xl mt-8;
+        }
 
-@media(min-width:1024px) {
-
-    .subtitle{
-
-        font-size: 3.052rem;
-        line-height: 1;
-    }
-
-    section {
-        width: 500px;
-    }
+        blockquote{
+            @apply text-3xl;
+        }
+   }
 }
