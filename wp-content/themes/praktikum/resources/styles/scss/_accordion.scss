@@ -1,4 +1,16 @@
 .accordion {
     
-    @apply mb-20
+    @apply mb-20;
+}
+
+.accordion-body {
+
+    h1, h2, h3, h4 {
+
+        @apply text-2xl md:text-3xl lg:text-4xl;
+    }
+
+    ul {
+        @apply list-disc;
+    }
 }

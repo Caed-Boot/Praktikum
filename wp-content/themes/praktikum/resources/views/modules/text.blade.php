@@ -1,11 +1,13 @@
 @php
-    $textOnly = $data['text'];
+    $textOnly = isset($data['text']) ? $data['text'] : '' ;
+    // $buttonText = 
 @endphp
+
             
-<article class=" mb-10 text-base px-4 space-y-6 md:text-xl md:w-[90%] md:mx-auto lg:w-9/12 lg:text-2xl font-spartan infos">
+<div class=" mb-10 text-base px-4 space-y-6 md:text-lg md:w-[90%] md:mx-auto lg:w-9/12 lg:text-xl font-spartan infos">
 
     {!! $textOnly !!}
-</article>
+</div>
 
     {{-- SE LE QUITO LA CLASE (opacity-0) PARA DESHABILITAR EL INTERSECtion observer --}}
     
