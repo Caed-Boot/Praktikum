@@ -1,0 +1,15 @@
+.custom-info {
+    @apply p-2;
+
+    h2, h3, h4 {
+
+        @apply text-xl md:text-2xl xl:text-3xl;
+    }
+
+    h1 {
+        @apply text-4xl md:text-5xl xl:text-6xl
+    }
+
+    
+
+}
