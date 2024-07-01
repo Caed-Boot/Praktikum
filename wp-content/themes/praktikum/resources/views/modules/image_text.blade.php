@@ -17,7 +17,7 @@
 
 
 
-<section class="flex flex-col justify-center my-20 md:w-[90%] md:mx-auto">
+<section class="flex flex-col justify-center my-20 md:w-[90%] md:mx-auto image-text">
     <h2 class="text-slate-900 mb-2 p-4 text-2xl font-semibold md:text-3xl">
         {{ $title }}
     </h2>
