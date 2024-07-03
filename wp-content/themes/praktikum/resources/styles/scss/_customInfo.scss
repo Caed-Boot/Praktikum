@@ -9,7 +9,16 @@
     h1 {
         @apply text-4xl md:text-5xl xl:text-6xl
     }
+}
 
-    
+.grid-team {
+
+    h2 {
+        @apply text-xl lg:text-xl;
+    }
+
+    p, a {
+        @apply xl:text-xl;
+    }
 
 }
