@@ -13,6 +13,8 @@
     
         @endphp
 
+        @dump($data)
+
         <div class="flex items-end mb-20 md:mb-40 md:flex-col md:justify-center md:items-center">
             <div class="flex items-end gap-4 mx-2 md:mb-24 md:flex-col md:justify-center md:items-center">
                 <img src="{{$teamUrl}}" class="w-24 md:w-48 lg:w-64 xl:w-80">
