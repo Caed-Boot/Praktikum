@@ -10,4 +10,29 @@
             @apply text-3xl;
         }
    }
+
+   .history__container::before {
+    content: '';
+    z-index: 60;
+    position: absolute;
+    left: 50%;
+    height: 100%;
+    border: 0.5px solid black;
 }
+
+
+}
+
+@media(min-width:1024px) {
+
+    .circle {
+        width: 48px;
+        height: 10px;
+        border: 1px solid black;
+        border-radius: 50%;
+        bottom: 10%;
+        right: 32.1%;
+        z-index: 100;
+    }
+
+ }
