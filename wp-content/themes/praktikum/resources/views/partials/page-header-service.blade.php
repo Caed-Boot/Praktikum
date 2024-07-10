@@ -1,7 +1,7 @@
 @php
     $textCustom = isset($fields['text_custom']) ? $fields['text_custom'] : '';
     $imgCustom = isset($fields['image_custom']) ? $fields['image_custom'] : '';
-    $UrlCustom = $imgCustom['url'];
+    $UrlCustom = isset($imgCustom['url']) ? $imgCustom['url'] : '';
 
     $buttonCustom = isset($fields['button_custom']) ? $fields['button_custom'] : '';
     $buttonTitle = isset($buttonCustom['title']) ? $buttonCustom['title'] : '';
