@@ -7,7 +7,7 @@
     Estaremos recorriendo cada uno de los elementos del array como $item. En este caso queremos entrar a otro array con la key "repeater" 
 --}}
 
-<section class="grid grid-cols-2 p-2 gap-2 schreiner-grid">
+<section class="grid grid-cols-2 mx-auto auto-rows-[115px] md:auto-rows-[225px] md:gap-4 md:w-[95%] lg:auto-rows-[335px]  p-2 gap-2 schreiner">
     @foreach ($fields['modules'] as $i=> $item)
 
         {{-- 
@@ -28,16 +28,18 @@
                     $gridTitle = strtoupper(isset($element['grid_title']) ? $element['grid_title'] : '');
                     $gridImg = isset($element['grid_image']) ? $element['grid_image'] : '';
                     $gridUrl = isset($gridImg['url']) ? $gridImg['url'] : '';
+                    $gridRow = isset($element['rows']) ? $element['rows'] : '';
+                    $gridColumn = isset($element['columns']) ? $element['columns'] : '';
+                    
                 @endphp
 
-                    @dump($element)
                 
-                    <a href="">
-                        <div class="relative text-slate-50">
-                            <img src="{{ $gridUrl }}" alt="" class="h-80 object-cover w-full lg:h-96 brightness-50">
-                            <h2 class="absolute left-[50%] top-[50%]">{{ $gridTitle }}</h2>
-                        </div>
+                <div class=" relative text-slate-50 font-semibold text-lg md:text-xl lg:text-3xl xl:text-5xl row-span-{{$gridRow}} col-span-{{$gridColumn}} transition-all schreiner__card">
+                    <a class="" href="">
+                        <img src="{{ $gridUrl }}" alt="" class=" h-full object-cover w-full brightness-50 transition-all duration-500 hover:brightness-100">
+                        <h2 class="absolute left-[50%] top-[50%] transition-all duration-500">{{ $gridTitle }}</h2>
                     </a>
+                </div>
             @endforeach
 
         @endif

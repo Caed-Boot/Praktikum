@@ -1,6 +1,12 @@
-.schreiner-grid {
+.schreiner{
 
     h2 {
         transform: translate(-50%, -50%);
     }
+
+
+    .schreiner__card:hover h2  {
+        @apply opacity-0;
+    }
+
 }
