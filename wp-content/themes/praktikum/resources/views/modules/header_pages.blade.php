@@ -7,7 +7,7 @@
 
 
 <div class="relative text-slate-50 w-full mb-14 lg:h-96">
-    <img src="{{ $headerUrl }}" alt="" class="h-80 object-cover w-full lg:h-96">
+    <img src="{{ $headerUrl }}" alt="" class="h-80 object-cover w-full lg:h-96 brightness-75">
     <h2 class="absolute bottom-10 p-4 mb-2 text-5xl md:text-6xl lg:text-8xl">{{ $headerTitle }}</h2>
     <h4 class="text-base absolute bottom-0 p-4 md:text-xl">{!! $headerSubtitle !!}</h4>
 </div>

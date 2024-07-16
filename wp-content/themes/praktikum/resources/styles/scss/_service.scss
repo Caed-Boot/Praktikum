@@ -1,0 +1,15 @@
+.service {
+
+    .service__grid img:hover {
+
+        filter: brightness(100%);
+    }
+
+    .service__grid:hover h2 {
+
+        background-color: rgb(24, 24, 24);
+        color: rgb(242, 242, 242);
+        bottom: 0;
+        padding: 0px 10px 0px 10px;
+    }
+}
