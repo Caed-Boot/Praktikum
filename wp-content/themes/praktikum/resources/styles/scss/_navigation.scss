@@ -2,28 +2,38 @@ body {
     background-color: white;
 }
 
-nav ul,
-nav ul li {
 
-    @apply text-lg transition relative;
 
+.hidden-menu {
+    transition: transform 0.5s ease-in-out ;
 }
 
-nav ul li ul{
+.show-submenu {
+    transform: translate(0vh);
+    transition: transform 0.5s ease-in-out;
+}
 
-    @apply bg-slate-100 hidden space-y-20;
+.submenu-triangle {
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    
+    border-top: 10px solid white;
+}
+
+.second-hidden-submenu {
 
     li {
-        @apply bg-slate-100 absolute p-2 w-auto inline-block;
+        @apply flex justify-between items-center;
     }
-}
 
-nav ul li:hover ul{
+    
+  
 
-    @apply block;
-}
+    li ul {
+        
+        @apply hidden;
+    }
 
-nav ul li:hover {
-
-    @apply hover:text-red-600;
 }

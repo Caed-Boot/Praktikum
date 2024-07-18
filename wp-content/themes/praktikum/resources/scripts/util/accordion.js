@@ -37,6 +37,7 @@ function initAccordion () {
                     body.classList.toggle('h-[0%]')
                     body.classList.toggle('h-auto')
                     body.classList.toggle('overflow-hidden')
+                    
                     if (body.classList.contains('opacity-0')) {
                         setTimeout(() => {
                             body.classList.remove('opacity-0');

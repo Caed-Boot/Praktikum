@@ -4,36 +4,42 @@
 @endphp
 
 
-<header class="banner flex flex-row justify-between fixed z-20 w-full bg-white">
+<header class="banner h-20 flex flex-row justify-between fixed z-20 w-full bg-slate-50">
  
-    <a class="flex w-40 justify-center brand ml-6 bg-white md:w-40 lg:w-40" href="{{ home_url('/') }}">
+    <a class="flex justify-center items-center brand ml-6 bg-white md:w-40 lg:w-40" href="{{ home_url('/') }}">
       @include('svg.logo')
       <span class="sr-only"> {!! $siteName !!} </span>
 
     </a>
 
-      @if (has_nav_menu('primary_navigation'))
+    @if (has_nav_menu('primary_navigation'))
 
-        <nav class="flex items-center bg-white border-gray-200 mr-4 ">
-          <div class="max-w-screen-xl flex flex-wrap items-end justify-end mx-auto">
-          
-            {{-- Burger menu --}}
-            <button id="burger-button" data-collapse-toggle="navbar-default" type="button" class="inline-flex right-0 p-2 w-10 h-10 items-center justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default" aria-expanded="false">
-                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-                </svg>
-            </button>
-           {{-- Burger menu --}}  
-          </div>
-          <div class="h-0 overflow-hidden bg-white absolute left-0 top-[63px] w-full animate-fade transition-all md:block md:w-auto md:h-auto md:relative md:top-0" id="navbar-default">
-                {!! wp_nav_menu([
-                  'theme_location' => 'primary_navigation',
-                  'menu_class' => 'nav flex flex-col  items-center space-x-4 text-black font-semibold md:flex-row',
-                  'container' => '', 'echo' => false
-                  ]) !!}
-          </div>
 
-        </nav>
+      <div class=" flex justify-between items-center backdrop-blur-3xl p-2" >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" id="burger-button" class=" w-10 cursor-pointer">
+              <path fill-rule="evenodd" d="M2 4.75A.75.75 0 0 1 2.75 4h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 4.75ZM2 10a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 10Zm0 5.25a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+          </svg>
+          <svg fill="#000000" height="20px" width="20px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+          viewBox="0 0 490 490" xml:space="preserve">
+      </div>
+
+      <nav class="hidden-menu w-full h-full bg-[#b5131d] fixed z-20 p-4">
+          {{-- ✖️ --}}
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="white" class="w-14 h-14 ml-auto cursor-pointer close-menu">
+              <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
+          </svg>
+            
+    
+          {!! wp_nav_menu([
+            'theme_location' => 'primary_navigation',
+            'menu_class' => 'relative flex flex-col w-full gap-8 text-slate-100 capitalize text-xl mt-20 p-4 second-hidden-submenu',
+            'after' => '<span class="submenu-triangle"></span>',
+            'echo' => false,
+          ]) !!}
+
+
+      </nav>
+
   @endif
 </header>
  
