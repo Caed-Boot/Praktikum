@@ -1,6 +1,6 @@
 @if ($data['slider'])
 
-<div class="swiper mb-20 md:h-96 lg:h-[600px]">
+<div class="swiper mb-20 md:h-[85vh] lg:h-[600px]">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
       <!-- Slides -->

@@ -3,7 +3,7 @@ import { initSwiper } from './util/swiper';
 import {mediaTextObserver } from './util/fadeObserver';
 import { initAccordion } from './util/accordion';
 import { initBurgerMenu } from './util/burgerMenu';
-/**
+import { initSubmemuHeader } from './util/submenuHeader';/**
  * Application entrypoint
  */
 domReady(async () => {
@@ -12,7 +12,8 @@ domReady(async () => {
     initBurgerMenu()
     initAccordion()
     mediaTextObserver()
-    initSwiper();
+    initSwiper()
+    initSubmemuHeader()
   } catch (error) {
     console.log(error)
   }

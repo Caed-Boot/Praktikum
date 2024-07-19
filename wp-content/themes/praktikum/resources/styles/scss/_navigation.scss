@@ -5,35 +5,46 @@ body {
 
 
 .hidden-menu {
+    transform: translateY(-100vh);
     transition: transform 0.5s ease-in-out ;
-}
+    overflow-y: scroll;
 
-.show-submenu {
-    transform: translate(0vh);
-    transition: transform 0.5s ease-in-out;
 }
 
 .submenu-triangle {
+    cursor: pointer;
     width: 0; 
     height: 0; 
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    
     border-top: 10px solid white;
+}
+
+.triangle-rotate {
+    transform: rotate(180deg);
 }
 
 .second-hidden-submenu {
 
-    li {
-        @apply flex justify-between items-center;
+    li div{
+        @apply flex flex-col ml-auto;
     }
 
-    
-  
 
-    li ul {
-        
+    li ul div {
         @apply hidden;
     }
+
+    li ul {
+        @apply flex flex-col gap-6 mt-6 px-6 ;
+    }
+
+    .sub-menu {
+
+        @apply overflow-hidden h-0;
+        
+        
+    }
+
 
 }

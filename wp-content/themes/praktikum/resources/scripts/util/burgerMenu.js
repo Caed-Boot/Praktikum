@@ -1,31 +1,26 @@
 function initBurgerMenu () {
 
     const button = document.getElementById('burger-button')
-    const hiddenMenu = document.querySelector('.hidden-menu')
+    const hiddenMenu = document.querySelector('.primary-nav')
     const closeMenu = document.querySelector('.close-menu')
 
     button.addEventListener('click', (event) => {
         event.preventDefault()
 
-        hiddenMenu.classList.add('hidden')
 
-        if (hiddenMenu.classList.contains('hidden')) {
-            hiddenMenu.classList.remove('hidden')
+        if (hiddenMenu.classList.contains('hidden-menu')) {
+            hiddenMenu.classList.remove('hidden-menu')
         } 
 
     })
 
     closeMenu.addEventListener('click', (event) => {
-        event.preventDefault()
 
-
-        
-
-        if (!hiddenMenu.classList.contains('hidden')) {
-            hiddenMenu.classList.add('hidden')
-        } 
-
+        if (!hiddenMenu.classList.contains('hidden-menu')) {
+            hiddenMenu.classList.add('hidden-menu')
+        }
     })
+   
 }
 
 export {initBurgerMenu}
