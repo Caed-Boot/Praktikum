@@ -11,21 +11,27 @@
             $historyText = isset($item['text_history']) ? $item['text_history'] : '';
             $margin;
             $textPosition;
+            $circlePosition;
+
+            $i = $loop->index % 2;
 
             if ($loop->index % 2 == 0) {
-                $margin = "r";
+                $marginPosition = "l";
                 $textPosition = "right";
                 $circlePosition ="circle-right-position";
             } else {
-                $margin = "l";
+                $marginPosition = "r";
                 $textPosition = "left";
                 $circlePosition ="circle-left-position";
             }
         @endphp
 
+        @dump($loop->index)
+        @dump($i)
 
-        <div class="flex flex-col mb-12 gap-4 md:w-[40%] md:m{{ $margin }}-auto history">
-            <div class="relative md:text-{{$textPosition}}">
+
+        <div class="flex flex-col mb-12 gap-4 md:w-[40%] md:m{{$marginPosition}}-auto history">
+            <div class=" md:text-{{$textPosition}}">
                 <span class="circle"></span>
                 <span class=" history__title text-lg lg:text-3xl"> {{$historyYear}} </span>
             </div>

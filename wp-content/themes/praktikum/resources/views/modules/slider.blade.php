@@ -1,6 +1,6 @@
 @if ($data['slider'])
 
-<div class="swiper mb-20 md:h-[85vh] lg:h-[600px]">
+<div class="swiper mb-20 md:h-[75vh] lg:h-[600px]">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
       <!-- Slides -->
@@ -12,7 +12,7 @@
             
         @endphp
         
-        <img src="{{ $imgUrl }}" data-swiper-autoplay="2000" class="swiper-slide md:h-full object-cover "></img>
+        <img src="{{ $imgUrl }}" data-swiper-autoplay="2500" class="swiper-slide md:h-full object-cover"></img>
       @endforeach
         </div>
         <!-- If we need pagination -->

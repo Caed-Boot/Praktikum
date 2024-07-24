@@ -19,6 +19,7 @@ function initSwiper() {
         direction: 'horizontal',
         loop: true,
         centeredSlides: true,
+        speed: 1000,
   
         // If we need pagination
         pagination: {

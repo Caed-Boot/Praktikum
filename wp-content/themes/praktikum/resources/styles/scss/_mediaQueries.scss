@@ -12,27 +12,23 @@
    }
 
    .history__container::before {
-    content: '';
-    z-index: 1;
-    position: absolute;
-    left: 50%;
-    height: 100%;
-    border: 0.5px solid black;
-}
-
-
-}
-
-@media(min-width:1024px) {
-
-    .circle {
-        width: 48px;
-        height: 10px;
-        border: 1px solid black;
-        border-radius: 50%;
-        bottom: 10%;
-        right: 32.1%;
-        z-index: 100;
+        content: '';
+        z-index: 1;
+        position: absolute;
+        left: 50%;
+        height: 100%;
+        border: 0.5px solid black;
     }
 
- }
+    .submenu-triangle {
+        cursor: pointer;
+        width: 0; 
+        height: 0; 
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top: 6px solid #b5131d;
+        margin: 10px;
+    }
+
+
+}

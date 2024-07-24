@@ -1,23 +1,22 @@
-body {
-    background-color: white;
+
+header {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.822);
 }
-
-
 
 .hidden-menu {
     transform: translateY(-100vh);
     transition: transform 0.5s ease-in-out ;
     overflow-y: scroll;
-
 }
 
 .submenu-triangle {
     cursor: pointer;
-    width: 0; 
-    height: 0; 
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top: 10px solid white;
+    width: 0px; 
+    height: 0px; 
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid white;
 }
 
 .triangle-rotate {
@@ -26,8 +25,19 @@ body {
 
 .second-hidden-submenu {
 
+    @apply md:p-0 md:flex-row md:text-black md:mt-0 md:p-0 md:text-lg  md:w-auto md:flex-wrap md:justify-end ;
+
+    li {
+        @apply relative p-2 md:flex md:flex-row md:items-center md:text-lg md:font-semibold ;
+    }
+
+    li:hover ul {
+        @apply block;
+        
+    }
+
     li div{
-        @apply flex flex-col ml-auto;
+        @apply flex mr-auto;
     }
 
 
@@ -35,15 +45,18 @@ body {
         @apply hidden;
     }
 
-    li ul {
-        @apply flex flex-col gap-6 mt-6 px-6 ;
-    }
-
+   
     .sub-menu {
 
-        @apply overflow-hidden h-0;
-        
-        
+        @apply overflow-hidden hidden md:absolute left-0 top-[100%] ;
+    }
+
+    .sub-menu li {
+        background-color: rgba(255, 255, 255, 0.822);
+    }
+
+    .sub-menu li:hover {
+        @apply md:transition-all md:hover:text-red-600 ;
     }
 
 
