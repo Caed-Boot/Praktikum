@@ -1,4 +1,5 @@
 
+
 header {
     backdrop-filter: blur(10px);
     background-color: rgba(255, 255, 255, 0.822);
@@ -25,7 +26,7 @@ header {
 
 .second-hidden-submenu {
 
-    @apply md:p-0 md:flex-row md:text-black md:mt-0 md:p-0 md:text-lg  md:w-auto md:flex-wrap md:justify-end ;
+    @apply  md:p-0 md:flex-row md:text-black md:mt-0 md:p-0 md:text-lg  md:flex-wrap md:justify-end ;
 
     li {
         @apply relative p-2 md:flex md:flex-row md:items-center md:text-lg md:font-semibold ;
@@ -47,14 +48,10 @@ header {
 
    
     .sub-menu {
-
-        @apply overflow-hidden hidden md:absolute left-0 top-[100%] ;
+        @apply z-50 md:absolute md:left-0 md:top-[100%];
     }
 
-    .sub-menu li {
-        background-color: rgba(255, 255, 255, 0.822);
-    }
-
+    
     .sub-menu li:hover {
         @apply md:transition-all md:hover:text-red-600 ;
     }

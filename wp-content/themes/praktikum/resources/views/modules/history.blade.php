@@ -16,30 +16,26 @@
             $i = $loop->index % 2;
 
             if ($loop->index % 2 == 0) {
-                $marginPosition = "l";
-                $textPosition = "right";
-                $circlePosition ="circle-right-position";
+                $marginPosition = "md:mr-auto";
+                $textPosition = "md:text-right";
+                $circlePosition ="circle-design circle-right";
             } else {
-                $marginPosition = "r";
-                $textPosition = "left";
-                $circlePosition ="circle-left-position";
+                $marginPosition = "md:ml-auto";
+                $textPosition = "md:text-left";
+                $circlePosition ="circle-design circle-left";
             }
         @endphp
 
-        @dump($loop->index)
-        @dump($i)
 
-
-        <div class="flex flex-col mb-12 gap-4 md:w-[40%] md:m{{$marginPosition}}-auto history">
-            <div class=" md:text-{{$textPosition}}">
-                <span class="circle"></span>
-                <span class=" history__title text-lg lg:text-3xl"> {{$historyYear}} </span>
+        <div class="flex flex-col mb-12 gap-4 md:w-[40%] {{$marginPosition}} history">
+            <div class="relative {{$textPosition}}">
+                <span class="relative history__title text-lg lg:text-3xl {{$circlePosition}}"> {{$historyYear}} </span>
             </div>
 
             @if ($historyTitle == '' && $historyUrl =='')
                 
             @else
-                <h2 class="md:text-{{$textPosition}} lg:text-4xl"> {{ $historyTitle }} </h2>
+                <h2 class="{{$textPosition}} lg:text-4xl"> {{ $historyTitle }} </h2>
                 <img src="{{ $historyUrl }}" class="">
             @endif
             <div class=" history__info md:text-lg lg:text-2xl">

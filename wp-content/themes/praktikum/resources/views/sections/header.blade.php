@@ -1,6 +1,8 @@
 @php
   $isHome = is_front_page();
   $linkColor = isset( $isHome ) ? 'text-white' : 'text-black';
+
+  $imageLogo = 'images/marschall.png';
 @endphp
 
 
@@ -8,7 +10,7 @@
     
 
     <a class="flex justify-center items-center brand ml-6 md:w-40 lg:w-40" href="{{ home_url('/') }}">
-      @include('svg.logo')
+      <img src="@asset($imageLogo)" class="w-36 h-auto" alt="Logo marschall">
       <span class="sr-only"> {!! $siteName !!} </span>
 
     </a>
@@ -25,7 +27,7 @@
           viewBox="0 0 490 490" xml:space="preserve">
       </div>
 
-      <nav class="sm:hidden-menu sm:h-full sm:w-full md:w-auto sm:bg-[#b5131d] md:bg-transparent transition-all duration-700 fixed z-20 p-4 primary-nav md:static">
+      <nav class="hidden-menu h-[100vh] w-full md:h-auto md:w-auto bg-[#b5131d] md:bg-transparent transition-all duration-700 fixed z-20 p-4 primary-nav md:static">
           {{-- CLOSE MENU ✖️ --}}
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="white" class="w-14 h-14 ml-auto cursor-pointer close-menu md:hidden">
               <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />

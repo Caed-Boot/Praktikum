@@ -1,4 +1,16 @@
+@media (max-width:767px) {
+
+
+
+
+}
+
 @media(min-width:768px) {
+
+    .hidden-menu {
+        transform: translateY(0);
+        overflow-y: hidden
+    }
 
    .infos {
 
@@ -17,7 +29,7 @@
         position: absolute;
         left: 50%;
         height: 100%;
-        border: 0.5px solid black;
+        border: 1px solid black;
     }
 
     .submenu-triangle {
@@ -30,5 +42,81 @@
         margin: 10px;
     }
 
+    .circle-right::after {
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border: 1px solid black;
+        border-radius: 50%;
+        bottom: 25%;
+        z-index: 10;
+        background-color: aliceblue;
+        right: -83px;
+    }
+
+    .circle-left::before {
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border: 1px solid black;
+        border-radius: 50%;
+        bottom: 25%;
+        left: -81px;
+        z-index: 10;
+        background-color: aliceblue;
+    }
+
+
+    .sub-menu li {
+        background-color: rgba(255, 255, 255, 0.822);
+    }
+
+
+
+}
+
+@media(min-width:1024px) {
+
+    .circle-right::after {
+        right: calc(-220% - 14px);
+    }
+
+    .circle-left::before {
+        left: calc(-220% - 12px);
+    }
+
+}
+
+@media(min-width:1440px) {
+
+    .circle-right::after {
+        right: calc(-250% - 16px);
+        width: 12px;
+        height: 12px;
+    }
+
+    .circle-left::before {
+        left: calc(-250% - 14px);
+        width: 12px;
+        height: 12px;
+    }
+
+}
+
+@media(min-width:2560px) {
+
+    .circle-right::after {
+        right: calc(-460% - 15px);
+        width: 12px;
+        height: 12px;
+    }
+
+    .circle-left::before {
+        left: calc(-460% - 13px);
+        width: 12px;
+        height: 12px;
+    }
 
 }
