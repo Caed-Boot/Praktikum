@@ -12,5 +12,7 @@
 @import '/scss/_history.scss';
 @import '/scss/_schreiner.scss';
 @import '/scss/_service.scss';
+@import '/scss/_banner.scss';
 @import '/scss/_mediaQueries.scss';
+@import '/scss/_forms.scss';
 

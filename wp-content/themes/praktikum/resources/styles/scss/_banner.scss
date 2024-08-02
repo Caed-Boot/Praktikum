@@ -1,0 +1,40 @@
+.wrapper {
+    height: 40vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+    margin-bottom: 20px;
+    
+
+    .banner__container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        transform-style: preserve-3d;
+        z-index: -1;
+    }
+     
+    .banner__img {
+        transform: translateZ(-3px) scale(2);
+    }
+     
+     
+    .banner__img {
+         position: absolute;
+         height: 100%;
+         width: 100%;
+         z-index: -1;
+    }
+     
+     
+    .banner__text {
+         top: 30%;
+         transform: translate(-50% -50%);
+         color: rgba(245, 245, 245, 0.7);
+         font-size: 2.5rem;
+    }
+
+
+}
+

@@ -1,15 +1,11 @@
-@media (max-width:767px) {
 
-
-
-
-}
 
 @media(min-width:768px) {
 
+
     .hidden-menu {
         transform: translateY(0);
-        overflow-y: hidden
+        overflow-y: visible;
     }
 
    .infos {
@@ -78,6 +74,17 @@
 }
 
 @media(min-width:1024px) {
+
+    
+    .second-hidden-submenu {
+
+        li div {
+            position: relative;
+            right: auto;
+
+        }
+
+    }
 
     .circle-right::after {
         right: calc(-220% - 14px);

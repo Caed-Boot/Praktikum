@@ -1,0 +1,54 @@
+.obligatory::after {
+    content: '(Pflichtfeld)';
+}
+
+
+
+form {
+    position: relative;
+
+    input {
+        position: relative;
+
+        @apply transition-all;
+    }
+
+    .important_field::after {
+        content: 'asdasdasdsadsa';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: rgb(220, 0, 0);
+        z-index: 200;
+    }
+
+    input:focus {
+        border: 2px solid red !important;
+        background-color: white;
+    }
+
+    input::placeholder {
+        @apply md:text-xl;
+    }
+
+
+
+    label span {
+        color: red;
+    }
+
+    label {
+        @apply md:text-2xl !important; 
+    }
+
+
+    [type=checkbox] {
+        color: black;
+    }
+
+    input[data-absenden]:hover{
+        cursor: pointer;
+        background-color: rgb(107, 107, 107);
+    }
+
+}

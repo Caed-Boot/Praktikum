@@ -1,6 +1,10 @@
 .accordion {
     
     @apply mb-20;
+
+    a {
+        @apply !text-red-600;
+    }
 }
 
 .accordion-body {

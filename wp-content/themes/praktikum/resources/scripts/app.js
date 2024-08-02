@@ -3,12 +3,16 @@ import { initSwiper } from './util/swiper';
 import {mediaTextObserver } from './util/fadeObserver';
 import { initAccordion } from './util/accordion';
 import { initBurgerMenu } from './util/burgerMenu';
-import { initSubmemuHeader } from './util/submenuHeader';/**
+import { initSubmemuHeader } from './util/submenuHeader';
+import { initFormValidation } from './util/form';
+
+/**
  * Application entrypoint
  */
 domReady(async () => {
 
   try {
+    initFormValidation()
     initBurgerMenu()
     initAccordion()
     mediaTextObserver()

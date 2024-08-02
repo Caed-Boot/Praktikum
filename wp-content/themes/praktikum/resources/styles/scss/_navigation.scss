@@ -8,7 +8,6 @@ header {
 .hidden-menu {
     transform: translateY(-100vh);
     transition: transform 0.5s ease-in-out ;
-    overflow-y: scroll;
 }
 
 .submenu-triangle {
@@ -25,11 +24,20 @@ header {
 }
 
 .second-hidden-submenu {
+    
 
-    @apply  md:p-0 md:flex-row md:text-black md:mt-0 md:p-0 md:text-lg  md:flex-wrap md:justify-end ;
+    @apply md:p-0 md:flex-row md:text-black md:mt-0 md:p-0 md:text-lg  md:flex-wrap md:justify-end ;
 
     li {
-        @apply relative p-2 md:flex md:flex-row md:items-center md:text-lg md:font-semibold ;
+        @apply flex flex-col relative p-2 md:flex md:flex-row md:items-center md:text-lg md:font-semibold ;
+    }
+
+    li a {
+        @apply transition-all;
+    }
+
+    li a:hover {
+        @apply sm:text-slate-400 md:text-red-700;
     }
 
     li:hover ul {
@@ -38,7 +46,7 @@ header {
     }
 
     li div{
-        @apply flex mr-auto;
+        @apply absolute right-16 ml-auto md:static;
     }
 
 
@@ -48,7 +56,7 @@ header {
 
    
     .sub-menu {
-        @apply z-50 md:absolute md:left-0 md:top-[100%];
+        @apply flex flex-col hidden md:absolute md:left-0 md:top-[100%];
     }
 
     
@@ -57,4 +65,8 @@ header {
     }
 
 
+}
+
+.second-hidden-submenu div:last-child{
+    border: 0;
 }
