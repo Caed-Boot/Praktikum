@@ -3,9 +3,15 @@ function initFormValidation () {
     const formular = document.getElementById('contact-form')
     const inputValues = document.querySelectorAll('.form__input')
 
-    inputValues.forEach((element, index) => {
+    inputValues.forEach((input, index) => {
         
-        console.log(element);
+        input.addEventListener('keyup', (event) => {
+
+            if (input.value = '') {
+                console.log('escribe algo');
+                
+            }
+        })
     });
 }
 

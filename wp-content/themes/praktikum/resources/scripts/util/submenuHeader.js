@@ -1,28 +1,34 @@
 function initSubmemuHeader () {
 
-    const subMenu = document.querySelectorAll('.second-hidden-submenu li ul')
-    const triangleButton = document.querySelectorAll('.submenu-triangle')
+    const subMenuTitles = document.querySelectorAll('.second-hidden-submenu li:nth-child(1) a')
+    const subMenus = document.querySelectorAll('.second-hidden-submenu li ul')
+    const trianglesButton = document.querySelectorAll('.submenu-triangle')
 
 
+    trianglesButton.forEach ((triangle, index) => {
 
-    triangleButton.forEach ((triangle, index) => {
+       
+        
 
         triangle.addEventListener('click', (event) => {
 
+            const titleId = triangle.id + "-" + index
+            console.log(titleId);
 
 
-            subMenu.forEach((element, index) => {
+            subMenuTitles.forEach((title, index) => {
                 
-                if (element.classList.contains('sub-menu')) {
-            
-                    element.classList.remove('h-0')
-                    element.classList.remove('overflow-hidden')
-                    element.classList.add('!h-[500px]')
-                    console.log(element)
-                }
+                
+                // if (titleText == 'SCHREINERARBEITEN') {
+                //     console.log(titleText);
+                // }
 
-    
-            } )
+
+            });
+
+
+                
+            
 
 
         })

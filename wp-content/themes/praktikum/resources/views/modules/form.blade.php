@@ -1,6 +1,6 @@
 
 
-<form action="" method="POST" class="flex flex-col p-3 gap-2 md:w-[85%] md:mx-auto" id="contact-form">
+<form action="" method="POST" class="flex flex-col p-3 gap-2 md:w-[85%] md:mx-auto lg:w-[70%] xl:w-[65%]" id="contact-form">
 
     @foreach ($data['repeater'] as $item)
     
@@ -52,6 +52,6 @@
     
     @endif
     
-    <input type="button" name="Absenden" class="border w-2/6 h-12 bg-gray-800 text-slate-50 font-semibold border-0" data-absenden="absenden" value="Absenden">
+    <input type="button" name="Absenden" class="border w-32 h-12 bg-gray-800 text-slate-50 font-semibold border-0" data-absenden="absenden" value="Absenden">
 
 </form>

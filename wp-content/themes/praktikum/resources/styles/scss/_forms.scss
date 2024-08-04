@@ -51,4 +51,14 @@ form {
         background-color: rgb(107, 107, 107);
     }
 
+    textarea::after {
+        content: '';
+        width: 20px;
+        height: 20px;
+        background-color: aqua;
+    }
+
+    .warning-border {
+        border: 1px solid red;
+    }
 }
