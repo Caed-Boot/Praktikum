@@ -1,41 +1,61 @@
 function initSubmemuHeader () {
 
-    const subMenuTitles = document.querySelectorAll('.second-hidden-submenu li:nth-child(1) a')
-    const subMenus = document.querySelectorAll('.second-hidden-submenu li ul')
+    const subMenus = document.querySelectorAll('.sub-menu')
+
     const trianglesButton = document.querySelectorAll('.submenu-triangle')
 
-
-    trianglesButton.forEach ((triangle, index) => {
-
-       
+    subMenus.forEach ((submenu, index) => {
+                
+        submenu.classList.add('submenu-' + index)
+        console.log(submenu);
         
+    })
+    
+    trianglesButton.forEach ((triangle, index) => {
+        
+        const triangleId = 'triangle' + '-' + index
+
+        triangle.setAttribute('id', triangleId)
+        
+        if (triangle.id === 'triangle-0') {
+            triangle.classList.add('submenu-0')
+            console.log(triangle);
+        } else if(triangle.id === 'triangle-13') {
+
+            triangle.classList.add('submenu-1')
+            console.log(triangle);
+        } else if (triangle.id === 'triangle-19') {
+
+            triangle.classList.add('submenu-2')
+            console.log(triangle);
+
+        }
 
         triangle.addEventListener('click', (event) => {
 
-            const titleId = triangle.id + "-" + index
-            console.log(titleId);
 
 
-            subMenuTitles.forEach((title, index) => {
-                
-                
-                // if (titleText == 'SCHREINERARBEITEN') {
-                //     console.log(titleText);
-                // }
+            subMenus.forEach((submenu, index) => {
 
 
-            });
-
-
-                
-            
-
-
+                if (submenu.classList.contains('submenu-0') && triangle.classList.contains('submenu-0')) {
+                    console.log('epaaa');
+                    
+                } 
+                if (submenu.classList.contains('submenu-1') && triangle.classList.contains('submenu-1')) {
+                    console.log('ueue');
+                    
+                } 
+                if (submenu.classList.contains('submenu-2') && triangle.classList.contains('submenu-2')) {
+                    console.log('uiiuasodiusaodiusaod');
+                    
+                } 
+            })
         })
-
-       
-
+            
     }) 
+
+   
 
 }
 

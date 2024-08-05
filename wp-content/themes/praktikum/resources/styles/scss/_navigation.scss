@@ -56,7 +56,7 @@ header {
 
    
     .sub-menu {
-        @apply flex flex-col hidden md:absolute md:left-0 md:top-[100%];
+        @apply flex flex-col  md:absolute md:left-0 md:top-[100%];
     }
 
     

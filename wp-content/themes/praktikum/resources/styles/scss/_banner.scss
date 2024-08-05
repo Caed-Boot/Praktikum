@@ -1,7 +1,7 @@
 .wrapper {
-    height: 40vh;
-    overflow-y: auto;
-    overflow-x: hidden;
+
+    height: 30vh;
+
     perspective: 10px;
     margin-bottom: 20px;
     
@@ -29,12 +29,12 @@
      
      
     .banner__text {
-         top: 30%;
+         top: 50%;
          transform: translate(-50% -50%);
          color: rgba(245, 245, 245, 0.7);
-         font-size: 2.5rem;
+         
+         @apply text-4xl; 
     }
-
 
 }
 

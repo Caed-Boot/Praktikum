@@ -7,12 +7,12 @@
     $buttonImgText = isset($data['button']) ? $data['button'] : '';
     $buttonTitle = isset($buttonImgText['title']) ? $buttonImgText['title'] : '';
     $buttonUrl = isset($buttonImgText['url']) ? $buttonImgText['url'] : '';
-    $padding = 'hola';
+    $padding = "";
 
     if ($order == 'rechts') {
         $order = 1;
         $position = 'left';
-        $padding = 'pl-10';
+        $padding = 'md:pl-10 lg:pl-14 xl:pl-24';
     } else {
         $order = 0;
         $position = 'right';
@@ -21,7 +21,7 @@
 
 <section class="flex flex-col justify-center my-20 md:w-[90%] md:mx-auto image-text">
     <div class="flex flex-col">
-        <h2 class="text-slate-900 mb-2 p-4 text-2xl font-semibold md:{{$padding}} md:text-3xl">
+        <h2 class="text-slate-900 mb-2 px-4 py-4 text-2xl font-semibold {{$padding}} md:text-3xl">
             {{ $title }}
         </h2>
         <div class="flex p-4 md:flex-row">

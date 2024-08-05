@@ -1,5 +1,5 @@
 
-<div id="flex justify-center mx-6 accordion">
+<div class="flex flex-col justify-center mx-6 my-20 accordion">
 
     @foreach ($data['accordion'] as $item)
         @php

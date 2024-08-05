@@ -37,7 +37,7 @@
           {!! wp_nav_menu([
             'theme_location' => 'primary_navigation',
             'menu_class' => ' flex flex-col text-slate-100 capitalize text-xl mt-20 p-4 second-hidden-submenu',
-            'after' => '<div class=" relative transition-all submenu-triangle" id="triangle"></div>',
+            'after' => '<div class=" relative transition-all submenu-triangle"></div>',
             'echo' => false,
           ]) !!}
 
