@@ -26,7 +26,8 @@ function initAccordion () {
             // Call the function and put title as argument inside
             // save in a variable
             const lastStringTitle = obtainLastString(title)
-
+            console.log(event);
+            
             
             accordionBodies.forEach((body, index) => {
                 // Call the function and put body as parameter inside

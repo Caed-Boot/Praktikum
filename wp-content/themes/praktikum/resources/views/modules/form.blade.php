@@ -1,7 +1,7 @@
 
 
 <form action="" method="POST" class="flex flex-col p-3 gap-2 md:w-[85%] md:mx-auto lg:w-[70%] xl:w-[65%]" id="contact-form">
-
+    @csrf
     @foreach ($data['repeater'] as $item)
     
         @php

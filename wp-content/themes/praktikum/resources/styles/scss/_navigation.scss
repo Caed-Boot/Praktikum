@@ -17,10 +17,12 @@ header {
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-top: 10px solid white;
+    transition: transform .2s ease-in-out;
 }
 
 .triangle-rotate {
     transform: rotate(180deg);
+    transition: all 0.3s ease-in-out;
 }
 
 .second-hidden-submenu {
@@ -45,8 +47,13 @@ header {
         
     }
 
+    li:hover .submenu-triangle {
+        transform: rotate(180deg);
+        transition-duration: .4s;
+    }
+
     li div{
-        @apply absolute right-16 ml-auto md:static;
+        @apply absolute left-[90%] md:static md:left-0;
     }
 
 
@@ -56,7 +63,7 @@ header {
 
    
     .sub-menu {
-        @apply flex flex-col  md:absolute md:left-0 md:top-[100%];
+        @apply flex flex-col h-0 overflow-hidden mt-2 duration-500 transition-all md:hidden md:min-w-36 md:h-auto md:pb-4  md:absolute md:left-0 md:top-[80%];
     }
 
     
@@ -64,6 +71,20 @@ header {
         @apply md:transition-all md:hover:text-red-600 ;
     }
 
+    .show-submenu {
+        height: 550px;
+        transition: all 0.5 ease-in;
+    }
+
+    .show-submenu-2 {
+        height: 250px;
+        transition: all 0.5 ease-in;
+    }
+
+    .show-submenu-3 {
+        height: 150px;
+        transition: all 0.5 ease-in;
+    }
 
 }
 

@@ -7,7 +7,6 @@ function initSubmemuHeader () {
     subMenus.forEach ((submenu, index) => {
                 
         submenu.classList.add('submenu-' + index)
-        console.log(submenu);
         
     })
     
@@ -19,36 +18,32 @@ function initSubmemuHeader () {
         
         if (triangle.id === 'triangle-0') {
             triangle.classList.add('submenu-0')
-            console.log(triangle);
         } else if(triangle.id === 'triangle-13') {
 
             triangle.classList.add('submenu-1')
-            console.log(triangle);
         } else if (triangle.id === 'triangle-19') {
 
             triangle.classList.add('submenu-2')
-            console.log(triangle);
 
         }
 
         triangle.addEventListener('click', (event) => {
 
 
-
             subMenus.forEach((submenu, index) => {
 
 
                 if (submenu.classList.contains('submenu-0') && triangle.classList.contains('submenu-0')) {
-                    console.log('epaaa');
-                    
+                    submenu.classList.toggle('show-submenu')  
+                    triangle.classList.toggle('triangle-rotate')                    
                 } 
                 if (submenu.classList.contains('submenu-1') && triangle.classList.contains('submenu-1')) {
-                    console.log('ueue');
-                    
+                    submenu.classList.toggle('show-submenu-2')  
+                    triangle.classList.toggle('triangle-rotate')  
                 } 
                 if (submenu.classList.contains('submenu-2') && triangle.classList.contains('submenu-2')) {
-                    console.log('uiiuasodiusaodiusaod');
-                    
+                    submenu.classList.toggle('show-submenu-3')  
+                    triangle.classList.toggle('triangle-rotate')  
                 } 
             })
         })
