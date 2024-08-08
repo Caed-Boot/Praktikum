@@ -10,7 +10,7 @@
     
 
     <a class="flex justify-center items-center brand ml-6 md:w-40 lg:w-40" href="{{ home_url('/') }}">
-      <img src="@asset($imageLogo)" class="w-36 h-auto" alt="Logo marschall">
+      <img src="@asset($imageLogo)" class="w-36 h-auto" alt="Logo Schreinerei Marschall">
       <span class="sr-only"> {!! $siteName !!} </span>
 
     </a>
