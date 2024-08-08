@@ -12,13 +12,13 @@
     @php(wp_body_open())
 
     <div id="app">
-      <a class="sr-only focus:not-sr-only" href="#main">
+      <a class=" sr-only focus:not-sr-only" href="#main">
         {{ __('Skip to content') }}
       </a>
 
       @include('sections.header')
 
-      <main id="main" class=" main">
+      <main id="main" class=" main overflow-x-hidden">
         @yield('content')
       </main>
 

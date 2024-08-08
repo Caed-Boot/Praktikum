@@ -2,7 +2,6 @@ function initAccordion () {
     const accordionTitles = document.querySelectorAll('.accordion-title')
     const accordionBodies = document.querySelectorAll('.accordion-body')
 
-
     const obtainLastString = (string) => {
 
         //Get the Id
@@ -26,16 +25,17 @@ function initAccordion () {
             // Call the function and put title as argument inside
             // save in a variable
             const lastStringTitle = obtainLastString(title)
-            console.log(event);
             
             
             accordionBodies.forEach((body, index) => {
+
                 // Call the function and put body as parameter inside
                 // save in a variable
                 const lastStringBody = obtainLastString(body)
                 // Compare them
                 if (lastStringTitle === lastStringBody) {
-                    body.classList.toggle('h-auto')
+
+                    body.classList.toggle(`h-auto`)
                     body.classList.toggle('h-[0%]')
                     body.classList.toggle('overflow-hidden')
                     

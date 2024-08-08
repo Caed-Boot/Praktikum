@@ -1,10 +1,41 @@
-.obligatory::after {
-    content: '(Pflichtfeld)';
+.nf-form-layout {
+    display: flex;
+    justify-content: center;
+}
+
+.nf-form-fields-required {
+    display: none;
+}
+
+.field-wrap {
+    display: flex;
+    flex-direction: column !important;
+
+}
+
+.nf-response-msg {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #ff4848;
+    transform: scale(1.1);
+    transition: all 0.6s ease-in-out;
+    
+}
+
+.email-notification {
+
+    font-family:Arial, Helvetica, sans-serif
+}
+
+form {
+    width: 95%;
+
+    @apply md:w-[90%];
 }
 
 
 
-form {
+.form {
     position: relative;
 
     input {
