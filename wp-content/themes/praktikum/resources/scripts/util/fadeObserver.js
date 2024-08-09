@@ -10,7 +10,6 @@ function mediaTextObserver () {
             if(entry.isIntersecting) {
             
                 entry.target.classList.remove('opacity-0');
-                entry.target.classList.add('animate-fade');
 
             }
         });
@@ -18,7 +17,7 @@ function mediaTextObserver () {
     
     const observer = new IntersectionObserver(loadImage, {
         root: null,
-        rootMargin: '',
+        rootMargin: '100px',
         threshold: 1.0
     })
     

@@ -6,7 +6,7 @@
 @endphp
 
 
-<header class="banner h-20 md:h-auto flex flex-row justify-between fixed z-20 w-full">
+<header class="banner h-20 flex flex-row justify-between items-center fixed z-20 w-full md:h-auto lg:h-28">
     
 
     <a class="flex justify-center items-center brand ml-6 md:w-40 lg:w-40" href="{{ home_url('/') }}">
@@ -36,7 +36,7 @@
     
           {!! wp_nav_menu([
             'theme_location' => 'primary_navigation',
-            'menu_class' => ' flex flex-col text-slate-100 capitalize text-xl mt-20 p-4 second-hidden-submenu',
+            'menu_class' => ' flex flex-col text-slate-100 capitalize text-xl md:text-2xl mt-20 p-4 second-hidden-submenu',
             'after' => '<div class=" relative transition-all submenu-triangle"></div>',
             'echo' => false,
           ]) !!}

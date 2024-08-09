@@ -35,7 +35,7 @@ header {
     }
 
     li a {
-        @apply transition-all;
+        @apply transition-all lg:text-2xl;
     }
 
     li a:hover {

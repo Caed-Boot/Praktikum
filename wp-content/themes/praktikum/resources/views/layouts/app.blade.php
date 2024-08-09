@@ -18,7 +18,7 @@
 
       @include('sections.header')
 
-      <main id="main" class=" main overflow-x-hidden">
+      <main id="main" class=" main overflow-x-hidden overflow-y-hidden ">
         @yield('content')
       </main>
 

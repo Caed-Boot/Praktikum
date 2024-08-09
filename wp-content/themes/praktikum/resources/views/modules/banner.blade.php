@@ -5,8 +5,8 @@
 @endphp
 
 
-<section class=" wrapper">
-    <div class="flex justify-center relative mb-20 banner__container">
+<section class="wrapper ">
+    <div class="flex justify-center relative banner__container">
         <img src="{{ $bannerUrl }}" class=" h-auto brightness-50 banner__img">
         <h2 class="absolute text-4xl w-[75%] text-center banner__text"> {{$bannerText}} </h2>
     </div>

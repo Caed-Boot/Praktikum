@@ -1,5 +1,6 @@
 .history {
 
+    
     @apply p-2;
 
     span{
@@ -10,9 +11,14 @@
         @apply text-3xl;
     }
 
-    
-
-  
-
 }
 
+.swift-left {
+    transform: translateX(-20vw);
+    
+}
+
+.swift-right {
+    transform: translateX(20vw);
+
+}

@@ -31,10 +31,13 @@
                     $gridRow = isset($element['rows']) ? $element['rows'] : '';
                     $gridColumn = isset($element['columns']) ? $element['columns'] : '';
                     
+                    $column = 'col-span-'.$gridColumn;
+                    $row = 'row-span-'.$gridRow;
                 @endphp
 
+
                 
-                <div class=" relative text-slate-50 font-semibold text-lg md:text-xl lg:text-3xl xl:text-5xl row-span-{{$gridRow}} col-span-{{$gridColumn}} transition-all schreiner__card">
+                <div class=" relative text-slate-50 font-semibold text-lg md:text-xl lg:text-3xl xl:text-5xl {{$row}} {{$column}} transition-all schreiner__card">
                     <a class="" href="">
                         <img src="{{ $gridUrl }}" alt="" class=" h-full object-cover w-full brightness-50 transition-all duration-500 hover:brightness-100">
                         <h2 class="absolute left-[50%] top-[50%] transition-all duration-500">{{ $gridTitle }}</h2>
@@ -44,5 +47,6 @@
 
         @endif
     @endforeach
+
 </section>
 

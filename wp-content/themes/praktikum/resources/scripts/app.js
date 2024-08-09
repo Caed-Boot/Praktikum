@@ -5,6 +5,7 @@ import { initAccordion } from './util/accordion';
 import { initBurgerMenu } from './util/burgerMenu';
 import { initSubmemuHeader } from './util/submenuHeader';
 import { initFormValidation } from './util/form';
+import { historyObserver } from './util/historyObserver';
 
 /**
  * Application entrypoint
@@ -12,6 +13,7 @@ import { initFormValidation } from './util/form';
 domReady(async () => {
 
   try {
+    historyObserver()
     initFormValidation()
     initBurgerMenu()
     initAccordion()

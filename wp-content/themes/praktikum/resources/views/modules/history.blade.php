@@ -16,18 +16,18 @@
             $i = $loop->index % 2;
 
             if ($loop->index % 2 == 0) {
-                $marginPosition = "md:mr-auto";
+                $marginPosition = "swift-left md:mr-auto";
                 $textPosition = "md:text-right";
                 $circlePosition ="circle-design circle-right";
             } else {
-                $marginPosition = "md:ml-auto";
+                $marginPosition = "swift-right md:ml-auto";
                 $textPosition = "md:text-left";
                 $circlePosition ="circle-design circle-left";
             }
         @endphp
 
 
-        <div class="flex flex-col mb-12 gap-4 md:w-[40%] {{$marginPosition}} history">
+        <div class="flex flex-col mb-12 gap-4 md:w-[40%] {{$marginPosition}} transition-all duration-1000  history">
             <div class="relative {{$textPosition}}">
                 <span class="relative history__title text-lg lg:text-3xl {{$circlePosition}}"> {{$historyYear}} </span>
             </div>

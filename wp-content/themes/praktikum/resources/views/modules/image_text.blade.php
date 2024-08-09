@@ -12,14 +12,14 @@
     if ($order == 'rechts') {
         $order = 1;
         $position = 'left';
-        $padding = 'md:pl-10 lg:pl-14 xl:pl-24';
+        $padding = 'md:pl-10 lg:pl-16 xl:pl-28';
     } else {
         $order = 0;
         $position = 'right';
     }
 @endphp
 
-<section class="flex flex-col justify-center my-20 md:w-[90%] md:mx-auto image-text">
+<section class="flex flex-col justify-center my-20 md:w-[90%] md:mx-auto image-text transition-all duration-500 opacity-0 section-img">
     <div class="flex flex-col">
         <h2 class="text-slate-900 mb-2 px-4 py-4 text-2xl font-semibold {{$padding}} md:text-3xl">
             {{ $title }}
