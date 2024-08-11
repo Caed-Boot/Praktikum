@@ -1,0 +1,32 @@
+main {
+    overflow-x: hidden;
+
+}
+
+
+body {
+
+    font-family: 'League Spartan', 'Poppins', 'Crimson Pro', Arial, sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 50px;
+    background-color: none;
+}
+
+::-webkit-scrollbar-track {
+    width: 5px;
+    border-radius: 50px;
+    height: 20px;
+
+}
+
+
+
+::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background-color: rgb(183, 0, 0);
+}
+
+

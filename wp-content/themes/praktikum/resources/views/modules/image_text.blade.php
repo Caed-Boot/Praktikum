@@ -19,7 +19,7 @@
     }
 @endphp
 
-<section class="flex flex-col justify-center my-20 md:w-[90%] md:mx-auto image-text transition-all duration-500 opacity-0 section-img">
+<section class="flex flex-col justify-center my-20 md:w-[90%] md:mx-auto image-text transition-all duration-500  section-img">
     <div class="flex flex-col">
         <h2 class="text-slate-900 mb-2 px-4 py-4 text-2xl font-semibold {{$padding}} md:text-3xl">
             {{ $title }}

@@ -2,6 +2,7 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+@import '/scss/_main.scss';
 @import '/scss/_navigation.scss';
 @import 'scss/_slider.scss';
 @import '/scss/_imageText.scss';
@@ -15,4 +16,5 @@
 @import '/scss/_banner.scss';
 @import '/scss/_mediaQueries.scss';
 @import '/scss/_forms.scss';
+
 
