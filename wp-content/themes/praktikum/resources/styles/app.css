@@ -2,9 +2,10 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+@import '/scss/_fonts.scss';
 @import '/scss/_main.scss';
 @import '/scss/_navigation.scss';
-@import 'scss/_slider.scss';
+@import '/scss/_slider.scss';
 @import '/scss/_imageText.scss';
 @import '/scss/_text.scss';
 @import '/scss/_accordion.scss';
@@ -17,4 +18,10 @@
 @import '/scss/_mediaQueries.scss';
 @import '/scss/_forms.scss';
 
+@font-face {
+    font-family: 'Crimson Pro';
+    font-size: normal;
+    font-weight: 400;
+    src: url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=League+Spartan:wght@100..900&family=Poppins:wght@300;400&display=swap');
+}
 

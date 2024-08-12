@@ -25,7 +25,7 @@
             {{ $title }}
         </h2>
         <div class="flex p-4 md:flex-row">
-            <article class="flex flex-col gap-8 md:flex-row">
+            <article class="flex flex-col gap-8 md:flex-row opacity-0 section-img transition-all duration-500">
                 <img src="{{ $imageSrc }}" class="mb-4 bg-cover bg-left object-cover md:order-{{ $order }} md:w-1/2 md:h-3/4 lg:w-[50%] lg:h-[100%]">
               
                 <div class="flex flex-col">

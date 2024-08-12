@@ -35,7 +35,7 @@ header {
     }
 
     li a {
-        @apply transition-all text-sm md:text-lg lg:text-xl;
+        @apply transition-all md:text-lg lg:text-xl;
     }
 
     li a:hover {

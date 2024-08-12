@@ -1,24 +1,24 @@
 main {
     overflow-x: hidden;
-
+    overflow-y: hidden;
+    font-family: 'Crimson Pro', 'League Spartan', 'Poppins', Arial, sans-serif;
 }
 
 
 body {
 
-    font-family: 'League Spartan', 'Poppins', 'Crimson Pro', Arial, sans-serif;
+    font-family: 'Crimson Pro', 'League Spartan', 'Poppins', Arial, sans-serif;
 }
 
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 10px;
     border-radius: 50px;
     background-color: none;
 }
 
 ::-webkit-scrollbar-track {
-    width: 5px;
+    width: 10px;
     border-radius: 50px;
-    height: 20px;
 
 }
 

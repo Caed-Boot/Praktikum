@@ -11,7 +11,7 @@ const config = {
         fade: 'fadeIn .5s ease-in',
       },
       fontFamily: {
-        'spartan': ['League Spartan', 'sans-serif'],
+        'crimson': ['Crimson Pro', 'sans-serif'],
       },
       keyframes: {
         fadeIn: {

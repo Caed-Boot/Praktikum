@@ -10,8 +10,8 @@
 
   <body @php(body_class())>
     @php(wp_body_open())
-
-    <div id="app">
+    {{--                  opacity-0 --}}
+    <div id="app" class=" transition-all duration-100">
       <a class=" sr-only focus:not-sr-only" href="#main">
         {{ __('Skip to content') }}
       </a>

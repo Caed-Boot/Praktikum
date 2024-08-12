@@ -30,11 +30,27 @@
                     $gridUrl = isset($gridImg['url']) ? $gridImg['url'] : '';
                     $gridRow = isset($element['rows']) ? $element['rows'] : '';
                     $gridColumn = isset($element['columns']) ? $element['columns'] : '';
-                    
-                    $column = 'col-span-'.$gridColumn;
-                    $row = 'row-span-'.$gridRow;
-                @endphp
 
+                    if ($gridRow == 1) {
+                        
+                        $row = 'row-span-1';
+                    } elseif ($gridRow == 2) {
+
+                        $row = 'row-span-2';
+                    } elseif ($gridRow == 3) {
+
+                        $row = 'row-span-3';
+                    }
+
+                    if ($gridColumn == 1) {
+
+                        $column = 'col-span-1';
+                    } elseif ($gridColumn == 2) {
+                        
+                        $column = 'col-span-2';
+                    }
+
+                @endphp
 
                 
                 <div class=" relative text-slate-50 font-semibold text-lg md:text-xl lg:text-3xl xl:text-5xl {{$row}} {{$column}} transition-all schreiner__card">

@@ -11,14 +11,17 @@
         @apply text-3xl;
     }
 
+
 }
 
 .swift-left {
-    transform: translateX(-20vw);
+    transform: translateX(-400px);
+    opacity: 0;
     
 }
 
 .swift-right {
-    transform: translateX(20vw);
-
+    transform: translateX(400px);
+    opacity: 0;
 }
+

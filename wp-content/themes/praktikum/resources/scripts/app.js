@@ -6,6 +6,8 @@ import { initBurgerMenu } from './util/burgerMenu';
 import { initSubmemuHeader } from './util/submenuHeader';
 import { initFormValidation } from './util/form';
 import { historyObserver } from './util/historyObserver';
+import { initParallax } from './util/parallax';
+import { initLoadBody } from './util/loadBody';
 
 /**
  * Application entrypoint
@@ -13,6 +15,8 @@ import { historyObserver } from './util/historyObserver';
 domReady(async () => {
 
   try {
+    initLoadBody()
+    initParallax()
     historyObserver()
     initFormValidation()
     initBurgerMenu()
