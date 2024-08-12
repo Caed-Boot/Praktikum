@@ -35,7 +35,7 @@ header {
     }
 
     li a {
-        @apply transition-all lg:text-xl;
+        @apply transition-all text-sm md:text-lg lg:text-xl;
     }
 
     li a:hover {
@@ -63,7 +63,7 @@ header {
 
    
     .sub-menu {
-        @apply flex flex-col h-0 overflow-hidden mt-2 duration-500 transition-all md:hidden md:min-w-36 md:h-auto md:pb-4  md:absolute md:left-0 md:top-[80%];
+        @apply flex flex-col h-0 overflow-hidden mt-2 duration-500 transition-all md:hidden md:min-w-36 md:h-auto md:px-4  md:absolute md:left-0 md:top-[80%];
     }
 
     

@@ -6,7 +6,7 @@
 @endphp
 
 
-<header class="banner h-20 flex flex-row justify-between items-center fixed z-20 w-full md:h-auto lg:h-28">
+<header class="banner h-20 flex flex-row justify-between fixed z-20 w-full md:h-auto lg:h-28">
     
 
     <a class="flex justify-center items-center brand ml-6 md:w-40 lg:w-40" href="{{ home_url('/') }}">
@@ -27,7 +27,7 @@
           viewBox="0 0 490 490" xml:space="preserve">
       </div>
 
-      <nav class="hidden-menu h-[100vh] w-full md:h-auto md:w-auto bg-[#b5131d] md:bg-transparent transition-all duration-700 fixed z-40 p-4 overflow-y-scroll primary-nav md:static">
+      <nav class="flex items-center hidden-menu h-[100vh] w-full md:h-auto md:w-auto bg-[#b5131d] md:bg-transparent transition-all duration-700 fixed z-40 p-4 overflow-y-scroll primary-nav md:static">
           {{-- CLOSE MENU ✖️ --}}
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="white" class="w-14 h-14 ml-auto cursor-pointer close-menu md:hidden">
               <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
