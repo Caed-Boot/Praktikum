@@ -19,4 +19,3 @@
    
 </div>
 
-    {{-- SE LE QUITO LA CLASE (opacity-0) PARA DESHABILITAR EL INTERSECtion observer --}}
