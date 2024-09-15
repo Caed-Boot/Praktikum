@@ -1,0 +1,29 @@
+.hidden-menu {
+
+    transform: translateY(-110vh);
+}
+
+.primary-nav {
+  
+    @apply md:translate-y-0 md:w-full ;
+
+    ul {
+        @apply flex relative md:justify-end md:flex-row md:m-0 md:text-lg md:px-8;
+
+        li {
+
+            @apply md:relative md:text-slate-800;
+
+            ul li {
+            @apply md:overflow-hidden md:absolute;
+
+            }
+
+        }
+
+        li:last-child span,
+        li:nth-child(2) span{
+            opacity: 0;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+@import 'scss/_fonts.scss';
+@import 'scss/_textAsset.scss';
+@import 'scss/_text.scss';
+@import 'scss/_button.scss';
+@import 'scss/_banner.scss';
+@import 'scss/_navigation.scss';
+@import 'scss/_main.scss';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+

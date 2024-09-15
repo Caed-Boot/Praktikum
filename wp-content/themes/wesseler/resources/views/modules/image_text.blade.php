@@ -28,7 +28,7 @@
         <div class="space-y-6 mb-8 card__text">
             {!! $text !!}
 
-            @if ($buttonTitle == '' && $buttonUrl == '')
+            @if ($buttonTitle == '')
             
             @else
     
@@ -44,7 +44,7 @@
             @endif
         </div>
 
-     
+      
     </div>
 
 </article>
