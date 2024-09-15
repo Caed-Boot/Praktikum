@@ -6,7 +6,7 @@
 @endphp
 
 
-<div class=" mb-10 text-base p-4 space-y-6 md:text-lg md:w-[85%] md:p-0 md:mx-auto  lg:w-10/12 lg:text-xl lg:w-[80%] xl:w-[70%] xl:text-2xl font-spartan infos">
+<div class=" mb-10 text-base p-4 space-y-6 md:text-lg md:w-[85%] md:p-0 md:mx-auto  lg:w-10/12 lg:text-xl lg:w-[80%] xl:w-[70%] font-spartan infos">
 
     {!! $textOnly !!}   
 
