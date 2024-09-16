@@ -21,7 +21,7 @@
 
     h3 {
 
-        @apply text-3xl lg:text-5xl;
+        @apply text-3xl lg:text-5xl line-clamp-1;
     }
     
     h2 {

@@ -12,18 +12,33 @@
 
         li {
 
-            @apply md:relative md:text-slate-800;
+            @apply  font-semibold md:relative md:text-slate-800 hover:text-turquoise transition-colors duration-200;
+
+            ul {
+                @apply flex flex-col gap-6 md:absolute md:-left-8 md:w-60 md:opacity-0 transition-all duration-150;
+            }
 
             ul li {
-            @apply md:overflow-hidden md:absolute;
+            @apply  md:bg-white md:p-2 md:right-2;
 
             }
 
+          
+
         }
 
-        li:last-child span,
-        li:nth-child(2) span{
-            opacity: 0;
+        li:hover ul {
+            
+            @apply md:opacity-100;
+        }
+
+        li:hover svg{
+            transform: rotate(180deg);
+        }
+
+        li:last-child div,
+        li:nth-child(2) div{
+            @apply hidden;
         }
     }
 }
