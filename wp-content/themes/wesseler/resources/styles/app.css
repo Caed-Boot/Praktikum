@@ -2,8 +2,10 @@
 @import 'scss/_textAsset.scss';
 @import 'scss/_text.scss';
 @import 'scss/_button.scss';
-@import 'scss/_banner.scss';
 @import 'scss/_navigation.scss';
+@import 'scss/_slider.scss';
+@import 'scss/_accordion.scss';
+@import 'scss/_gridTeam.scss';
 @import 'scss/_main.scss';
 
 @tailwind base;

@@ -1,0 +1,15 @@
+.grid-team {
+
+    
+    .grid-team__info {
+        
+        h5 {
+            @apply font-semibold;
+        }
+
+        p {
+            hyphens: auto;
+            @apply text-m-primary
+        }
+    }
+}

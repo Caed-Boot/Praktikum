@@ -2,7 +2,7 @@
 
 
     pre img {
-        @apply mx-auto md:mx-0;
+        @apply mx-auto md:mx-0 md:w-96;
     }
 
     ul {
@@ -15,18 +15,14 @@
         }
     }
 
-    p {
+    p,
+    h2,
+    h4,
+    h5,
+    h6 {
         @apply text-center md:text-left;
-    }
-
-    h3 {
-
-        @apply text-3xl lg:text-5xl line-clamp-1;
     }
     
-    h2 {
-        @apply text-center md:text-left;
-    }
 
     
 }

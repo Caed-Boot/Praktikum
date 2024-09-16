@@ -1304,6 +1304,76 @@
           "name": "9xl",
           "size": "8rem",
           "slug": "9xl"
+        },
+        {
+          "name": "m-second",
+          "size": "0.813rem",
+          "slug": "m-second"
+        },
+        {
+          "name": "m-primary",
+          "size": "1rem",
+          "slug": "m-primary"
+        },
+        {
+          "name": "m-h5",
+          "size": "1.25rem",
+          "slug": "m-h5"
+        },
+        {
+          "name": "m-h4",
+          "size": "1.5rem",
+          "slug": "m-h4"
+        },
+        {
+          "name": "m-h3",
+          "size": "1.813rem",
+          "slug": "m-h3"
+        },
+        {
+          "name": "m-h2",
+          "size": "2.188rem",
+          "slug": "m-h2"
+        },
+        {
+          "name": "m-h1",
+          "size": "2.813rem",
+          "slug": "m-h1"
+        },
+        {
+          "name": "d-second",
+          "size": "0.938rem",
+          "slug": "d-second"
+        },
+        {
+          "name": "d-primary",
+          "size": "1.125rem",
+          "slug": "d-primary"
+        },
+        {
+          "name": "d-h5",
+          "size": "1.375rem",
+          "slug": "d-h5"
+        },
+        {
+          "name": "d-h4",
+          "size": "2.125rem",
+          "slug": "d-h4"
+        },
+        {
+          "name": "d-h3",
+          "size": "2.688rem",
+          "slug": "d-h3"
+        },
+        {
+          "name": "d-h2",
+          "size": "3.5rem",
+          "slug": "d-h2"
+        },
+        {
+          "name": "d-h1",
+          "size": "5.375rem",
+          "slug": "d-h1"
         }
       ]
     }

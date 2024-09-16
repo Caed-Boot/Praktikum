@@ -6,7 +6,7 @@
 @endphp
 
 
-<header class="flex fixed bg-white w-full justify-between z-40  shadow-xl header">
+<header class="flex fixed bg-white w-full h-20 md:h-auto justify-between z-40  shadow-xl header">
     
 
     <a class="flex justify-center items-center brand ml-6 md:w-40 lg:w-40" href="{{ home_url('/') }}">
@@ -46,7 +46,7 @@
             'after' => '
             
             <div class="inline-block"> 
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-turquoise cursor-pointer relative top-1 transition-all duration-150">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-turquoise cursor-pointer relative top-1 left-3 md:left-0 transition-all duration-150 arrow">
                 <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
               </svg>
             </div>

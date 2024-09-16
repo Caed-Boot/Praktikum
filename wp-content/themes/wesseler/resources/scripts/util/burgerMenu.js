@@ -3,9 +3,21 @@ function initBurgerMenu () {
     const button = document.getElementById('burger-button')
     const hiddenMenu = document.querySelector('.primary-nav')
     const closeMenu = document.querySelector('.close-menu')
+    const arrow = document.querySelector('.arrow')
+    const subMenu = document.querySelector('.sub-menu')
 
-    console.log(closeMenu);
+    console.log(subMenu);
     
+
+
+    arrow.addEventListener('click',(event) => {
+        event.preventDefault()
+
+        subMenu.classList.toggle('h-0')
+        arrow.classList.toggle('rotate-180')
+                
+    })
+
 
     button.addEventListener('click', (event) => {
         event.preventDefault()

@@ -1,6 +1,10 @@
 function initAccordion () {
     const accordionTitles = document.querySelectorAll('.accordion-title')
     const accordionBodies = document.querySelectorAll('.accordion-body')
+    const plusAsset = document.querySelectorAll('.plus-asset')
+
+    console.log(plusAsset);
+    
 
     const obtainLastString = (string) => {
 
@@ -35,20 +39,9 @@ function initAccordion () {
                 // Compare them
                 if (lastStringTitle === lastStringBody) {
 
-                    body.classList.toggle(`h-auto`)
-                    body.classList.toggle('h-[0%]')
-                    body.classList.toggle('overflow-hidden')
+                    body.classList.toggle('grid-rows-1')
                     
-                    if (body.classList.contains('opacity-0')) {
-                        setTimeout(() => {
-                            body.classList.remove('opacity-0');
-                            body.classList.add('animate-fade');
-                          }, 300);
-                    } else {
-                        body.classList.remove('animate-fade');
-                        body.classList.add('opacity-0');
-                        
-                    }
+                    
                 } 
             })
 

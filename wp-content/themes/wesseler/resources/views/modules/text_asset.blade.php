@@ -14,7 +14,7 @@
         </span>
      
 
-        <h3> {{ $title }} </h3>
+        <p> {{ $title }} </p>
          
     </div>
 @endforeach

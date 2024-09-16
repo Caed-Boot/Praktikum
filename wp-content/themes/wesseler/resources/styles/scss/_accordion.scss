@@ -1,0 +1,17 @@
+.accordion-body{
+    display: grid;
+    grid-template-rows: 0fr;
+    justify-content: center;
+
+
+}
+
+.accordion-body > div {
+
+    @apply mx-auto overflow-hidden w-10/12 transition-all duration-300;
+}
+
+.accordion-title:hover > .accordion-body {
+    grid-template-rows: 1fr;
+}
+

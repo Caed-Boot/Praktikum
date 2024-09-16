@@ -6,7 +6,7 @@
 
 
 
-<div class="text-only space-y-8 px-8 py-16 md:w-[80%] md:mx-auto md:text-left">
+<div class="text-only space-y-8 px-8 py-16 md:w-[80%] lg:w-[70%] md:mx-auto md:text-left">
 
     {!! $textOnly !!}   
 
