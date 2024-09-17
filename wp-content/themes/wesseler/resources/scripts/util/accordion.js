@@ -31,7 +31,19 @@ function initAccordion () {
             const lastStringTitle = obtainLastString(title)
             
             
+            plusAsset.forEach((plus, index) => {
+                const plusId = plus.id
+                
+                if (lastStringTitle === plusId) {
+                    plus.classList.toggle('rotate-45')
+                }
+                
+            })
+
+            
             accordionBodies.forEach((body, index) => {
+
+               
 
                 // Call the function and put body as parameter inside
                 // save in a variable

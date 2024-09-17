@@ -4,12 +4,16 @@
     .grid-team__info {
         
         h5 {
-            @apply font-semibold;
+            @apply font-semibold md:text-d-h5;
+        }
+        p {
+
+            @apply hyphens-auto text-m-primary;
         }
 
-        p {
+         a{
             hyphens: auto;
-            @apply text-m-primary
+            @apply text-m-second md:text-d-second;
         }
     }
 }

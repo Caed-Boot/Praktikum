@@ -1,5 +1,5 @@
 
-<div class="flex flex-col justify-center my-24 md:w-[70%] md:mx-auto accordion">
+<div class="flex flex-col justify-center my-24 md:w-[80%] md:mx-auto lg:w-[70%] accordion">
 
     @foreach ($data['accordion'] as $item)
         @php
@@ -13,6 +13,7 @@
 
 
 
+
         {{-- Button --}}
         
         <h2 id="accordion-collapse-heading-{{ $openId }}" class=" accordion-title px-8 ">
@@ -20,7 +21,7 @@
                 <span class="text-left"> {{ $title }} </span>
 
 
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 transition-all duration-300 border rounded-full plus-asset">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 transition-all duration-300 border rounded-full plus-asset" id="{{$bodyId}}">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
                 </svg>
                 

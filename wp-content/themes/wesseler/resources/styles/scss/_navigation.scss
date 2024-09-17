@@ -8,42 +8,55 @@
     @apply md:translate-y-0 md:w-full ;
 
     ul {
-        @apply flex relative md:justify-end md:flex-row md:m-0 md:text-lg md:px-8;
+        @apply flex relative md:justify-end md:flex-row md:m-0 md:px-8;
 
         li {
 
-            @apply  font-semibold md:relative mt-2 md:text-slate-800 md:mt-0 md:hover:text-turquoise transition-colors duration-200;
+            @apply  font-semibold md:relative mt-2 md:text-slate-800 md:mt-0 md:hover:text-turquoise md:leading-9  lg:text-d-primary lg:leading-9 transition-colors duration-200;
 
             ul {
-                @apply md:h-auto flex overflow-hidden flex-col  gap-6 md:py-0 md:absolute md:-left-8 md:w-60 transition-all duration-150;
+                @apply  md:h-auto flex overflow-hidden flex-col  gap-6 md:py-0 md:absolute md:-left-8 md:w-60  transition-all duration-150;
             }
 
             ul li {
-            @apply text-m-primary md:bg-white md:p-2 md:right-2;
+            @apply text-m-primary md:bg-white md:p-2 md:right-2 lg:text-d-h5 lg:leading-10;
 
+            }
+
+            &:last-child
+             {
+                @apply border p-4 w-fit md:w-auto md:py-0 md:px-2 border-turquoise text-turquoise
+                hover:bg-turquoise hover:text-slate-50 ;
             }
 
         }
 
         li:hover ul {
-            @apply md:block;
+        @apply block;
         }
 
         li:hover svg{
             @apply md:rotate-180;
         }
 
-        li:last-child div,
-        li:nth-child(2) div{
+        li div{
             @apply hidden;
+        }
+
+        li:first-child div {
+            @apply inline-block;
         }
 
         .sub-menu {
 
-            @apply md:hidden;
+            @apply h-0 md:hidden md:h-auto;
     
-            div {
+            li div {
                 @apply hidden;
+            }
+
+            li:last-child {
+                @apply text-white border-0 p-0 md:p-2 md:text-black; 
             }
     
         }

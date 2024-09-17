@@ -21,7 +21,7 @@
 
 
 <article class="p-4 md:p-6 md:p-10 mb-12 transition-all duration-500 lg:w-[70%] lg:mx-auto opacity-0 card section-img">
-    <h2 class="mb-8 text-2xl md:text-3xl md:font-semibold card__title"> {{$title}} </h2>
+    <h4 class="mb-8 md:font-semibold card__title"> {{$title}} </h4>
     <div class="flex flex-col md:flex-row md:gap-8 lg:gap-10 card__container">
         <img src="{{$imageSrc}}" class="mb-8 object-cover object-center md:w-1/2 lg:w-3/5 card__img {{$order}} ">
 

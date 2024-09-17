@@ -1,0 +1,13 @@
+ .footer__info{
+    h6 {
+        @apply text-m-second font-semibold mb-2 md:text-d-second;
+    }
+
+    h5{
+        @apply mb-5 md:mb-8 md:!text-d-h4;
+    }
+
+    p {
+        @apply text-m-second md:text-d-second font-thin mb-1;
+    }
+ }

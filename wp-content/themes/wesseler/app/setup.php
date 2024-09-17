@@ -49,7 +49,11 @@ add_action('after_setup_theme', function () {
     ]);
 
     register_nav_menus([
-        'footer_wesseler' => __('Footer wesseler', 'sage'),
+        'wesseler_footer' => __('Wesseler Footer', 'sage'),
+    ]);
+
+    register_nav_menus([
+        'footer_datenschutz' => __('Datenschutz', 'sage'),
     ]);
 
 

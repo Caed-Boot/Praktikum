@@ -6,15 +6,16 @@ function initBurgerMenu () {
     const arrow = document.querySelector('.arrow')
     const subMenu = document.querySelector('.sub-menu')
 
-    console.log(subMenu);
     
 
 
     arrow.addEventListener('click',(event) => {
         event.preventDefault()
 
-        subMenu.classList.toggle('h-0')
-        arrow.classList.toggle('rotate-180')
+                        
+
+            subMenu.classList.toggle('!h-auto')
+            arrow.classList.toggle('rotate-180')
                 
     })
 

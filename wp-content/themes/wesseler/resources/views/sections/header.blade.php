@@ -6,11 +6,11 @@
 @endphp
 
 
-<header class="flex fixed bg-white w-full h-20 md:h-auto justify-between z-40  shadow-xl header">
+<header class="flex fixed bg-white w-full h-20 md:h-auto justify-between z-40 shadow-xl lg:px-14 xl:px-36 header">
     
 
     <a class="flex justify-center items-center brand ml-6 md:w-40 lg:w-40" href="{{ home_url('/') }}">
-      <img src="@asset($imageLogo)" class="w-20" alt="Logo Schreinerei Marschall">
+      <img src="@asset($imageLogo)" class="w-20 md:w-36" alt="Logo Schreinerei Marschall">
       <span class="sr-only"> {!! $siteName !!} </span>
 
     </a>
@@ -42,7 +42,7 @@
             
           {!! wp_nav_menu([
             'theme_location' => 'primary_navigation',
-            'menu_class' => 'flex flex-col gap-8 md:gap-5 text-slate-100 capitalize text-xl md:text-2xl mt-20',
+            'menu_class' => 'flex flex-col gap-8 md:gap-5 text-slate-100 capitalize',
             'after' => '
             
             <div class="inline-block"> 
