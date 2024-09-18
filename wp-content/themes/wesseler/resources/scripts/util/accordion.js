@@ -51,7 +51,7 @@ function initAccordion () {
                 // Compare them
                 if (lastStringTitle === lastStringBody) {
 
-                    body.classList.toggle('grid-rows-1')
+                    body.classList.toggle('accordion-body-show')
                     
                     
                 } 

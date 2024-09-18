@@ -1,3 +1,4 @@
+
 .accordion-body{
     display: grid;
     grid-template-rows: 0fr;
@@ -6,12 +7,21 @@
 
 }
 
-.accordion-body > div {
-
-    @apply mx-auto overflow-hidden w-10/12 transition-all duration-300;
-}
-
-.accordion-title:hover > .accordion-body {
+.accordion-body-show {
     grid-template-rows: 1fr;
+
 }
 
+.accordion-body > div {
+    
+
+    @apply mx-auto space-y-4 overflow-hidden w-10/12 transition-all duration-300;
+}
+
+.accordion-title {
+    @apply border-b-[1px] border-turquoise;
+}
+
+.accordion-title:first-child {
+    @apply border-t-[1px];
+}

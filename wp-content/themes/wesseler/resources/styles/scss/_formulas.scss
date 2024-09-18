@@ -1,0 +1,69 @@
+main {
+    overflow-x: hidden;
+}
+
+.nf-form-cont {
+    @apply w-[80%] mx-auto;
+
+    * {
+        @apply !bg-white !border-0 !p-0;
+    }
+
+    .nf-field-element {
+        @apply  !border-b-2 ;
+    
+        input::placeholder{
+        @apply text-white;
+        }
+
+        textarea {
+            @apply !border;
+        }
+
+        &:current {
+            @apply !border-turquoise;
+        }
+
+    }
+
+    .nf-pass.field-wrap .nf-field-element:after {
+
+        @apply !bg-white;
+    }
+
+    .nf-form-fields-required {
+        @apply !hidden;
+    }
+
+    .nf-error-msg {
+        @apply text-turquoise;
+    }
+
+    .nf-field-label label {
+        @apply font-normal;
+    }
+
+    .nf-field-description p a {
+        @apply !text-turquoise;
+    }
+
+    .nf-field-element:after {
+        @apply !bg-turquoise;
+    }
+
+    .nf-error-required-error {
+        @apply text-turquoise
+    }
+
+    .ninja-forms-req-symbol{
+        @apply text-turquoise;
+    }
+
+    .nf-element[value="Absenden"] {
+        @apply !bg-turquoise cursor-pointer hover:text-slate-300 !p-2;
+    }
+
+    .checkbox-wrap {
+        @apply flex flex-col !hyphens-auto;
+    }
+}

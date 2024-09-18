@@ -7,6 +7,7 @@
 @import 'scss/_slider.scss';
 @import 'scss/_accordion.scss';
 @import 'scss/_gridTeam.scss';
+@import 'scss/_formulas.scss';
 @import 'scss/_main.scss';
 
 @tailwind base;

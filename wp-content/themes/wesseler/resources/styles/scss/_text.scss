@@ -1,8 +1,8 @@
 .text-only {
 
 
-    pre img {
-        @apply mx-auto md:mx-0 md:w-96;
+    img {
+        @apply mx-auto mb-4 md:mx-0 md:w-96;
     }
 
     ul {

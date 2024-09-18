@@ -17,9 +17,9 @@
                 
                 <div class="flex md:flex-col md:items-center gap-6">
 
-                    <img src="{{$teamUrl}}" class="object-cover object-center w-2/5 md:w-4/5">
+                    <img src="{{$teamUrl}}" class="object-cover object-center w-2/5 md:w-3/5 lg:h-3/5 lg:w-4/5">
                     
-                    <div class="flex flex-col justify-start space-y-2 grid-team__info">
+                    <div class="flex flex-col justify-start space-y-2 grid-team__info md:w-4/5 ">
                         
                         <div class="space-y-3">
                             {!! $teamInfo !!} 

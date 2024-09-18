@@ -1,5 +1,5 @@
 
-<div class="flex flex-col justify-center my-24 md:w-[80%] md:mx-auto lg:w-[70%] accordion">
+<div class="flex flex-col justify-center mx-auto my-24 w-[90%] md:w-[80%]  lg:w-[70%] accordion">
 
     @foreach ($data['accordion'] as $item)
         @php
@@ -16,8 +16,10 @@
 
         {{-- Button --}}
         
-        <h2 id="accordion-collapse-heading-{{ $openId }}" class=" accordion-title px-8 ">
-            <button type="button" class="w-full flex items-center justify-between py-4 border-y-[1px] text-m-primary font-semibold border-turquoise transition-colors md:text-d-primary" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-">
+        <h2 id="accordion-collapse-heading-{{ $openId }}" class=" accordion-title px-8">
+            <button type="button" class="w-full flex items-center justify-between py-4  text-m-primary font-semibold  transition-colors md:text-d-primary lg:text-d-h5 accordion__button" 
+            
+            data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-">
                 <span class="text-left"> {{ $title }} </span>
 
 
@@ -29,7 +31,7 @@
         </h2>
 
         {{-- Text --}}
-        <article id=" accordion-collapse-body-{{ $bodyId }}" class="grid w-10/12 transition-all p-4 duration-300 ease-in-out accordion-body">
+        <article id=" accordion-collapse-body-{{ $bodyId }}" class="w-10/12 transition-all duration-300 ease-in-out accordion-body">
             <div class="transition-all duration-300">
                 {!! $text !!}
             </div>
