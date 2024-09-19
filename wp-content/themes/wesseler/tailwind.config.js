@@ -44,7 +44,7 @@ const config = {
       'd-h4': ['2.125rem', { lineHeight: '1.75rem' }],
       'd-h3': ['2.688rem', { lineHeight: '2.50rem' }],
       'd-h2': ['3.5rem', { lineHeight: '3.25rem' }],
-      'd-h1': ['5.375rem', { lineHeight: '3.5rem' }],
+      'd-h1': ['5.375rem', { lineHeight: '5rem' }],
     },
 
     

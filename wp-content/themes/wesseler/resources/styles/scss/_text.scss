@@ -1,6 +1,22 @@
 .text-only {
 
 
+    .text__turquoise-title {
+        position: relative;
+    }
+
+    h2::after{
+        position: absolute;
+        color: turquoise;
+        font-size: 1.75rem;
+        border: 1px solid black;
+        bottom: 0;
+        top: -4rem;
+        right: 0;
+        left: 0;
+    }
+
+
     img {
         @apply mx-auto mb-4 md:mx-0 md:w-96;
     }

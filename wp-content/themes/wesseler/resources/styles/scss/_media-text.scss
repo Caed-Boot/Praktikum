@@ -1,0 +1,16 @@
+.media-text {
+
+  .image,
+  .video {
+    @apply absolute min-h-full w-full top-0 left-0 -z-10;
+  }
+
+  .video video {
+    @apply absolute w-full h-full;
+  }
+
+  &.media-text-overlay .image img {
+    @apply md:h-screen md:max-h-[1000px] w-full h-full absolute object-cover object-center;
+  }
+
+}

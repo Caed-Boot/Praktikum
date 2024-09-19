@@ -18,6 +18,10 @@
     @apply mx-auto space-y-4 overflow-hidden w-10/12 transition-all duration-300;
 }
 
+.accordion-body div p {
+    @apply py-4
+}
+
 .accordion-title {
     @apply border-b-[1px] border-turquoise;
 }

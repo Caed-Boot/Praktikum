@@ -3,6 +3,30 @@
     transform: translateY(-110vh);
 }
 
+#burger-button::before {
+    content: '';
+    position: absolute;
+    width: 85%;
+    height: 100%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#burger-button::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 0;
+
+    border: 1px solid black;
+    left: 0;
+    right: 0;
+    top: 49%;
+    bottom: 0;
+}
+
+
+
 .primary-nav {
   
     @apply md:translate-y-0 md:w-full ;
@@ -61,7 +85,6 @@
     
         }
     }
-
-    
     
 }
+

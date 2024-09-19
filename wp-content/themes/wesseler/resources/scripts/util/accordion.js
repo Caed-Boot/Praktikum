@@ -3,7 +3,6 @@ function initAccordion () {
     const accordionBodies = document.querySelectorAll('.accordion-body')
     const plusAsset = document.querySelectorAll('.plus-asset')
 
-    console.log(plusAsset);
     
 
     const obtainLastString = (string) => {

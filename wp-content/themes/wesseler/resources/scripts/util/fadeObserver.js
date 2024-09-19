@@ -1,4 +1,4 @@
-function mediaTextObserver () {
+function imageTextObserver () {
 
 
 
@@ -26,5 +26,5 @@ function mediaTextObserver () {
 
 
 
-export {mediaTextObserver};
+export {imageTextObserver};
 

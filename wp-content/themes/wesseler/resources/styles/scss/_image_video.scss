@@ -1,0 +1,10 @@
+.video.embed-container iframe {
+  height: 100% !important;
+  width: 100% !important;
+  object-fit: contain;
+  object-position: center;
+}
+
+.image img {
+  @apply md:h-screen md:max-h-[1000px] w-full object-cover object-center;
+}

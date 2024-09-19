@@ -9,21 +9,35 @@ main {
         @apply !bg-white !border-0 !p-0;
     }
 
-    .nf-field-element {
-        @apply  !border-b-2 ;
+    .field-wrap {
+        @apply  !border-b-2 !border-slate-600;
     
         input::placeholder{
         @apply text-white;
         }
 
         textarea {
-            @apply !border;
+            @apply border;
         }
 
         &:current {
             @apply !border-turquoise;
         }
+    }
 
+    .field-wrap:valid {
+        @apply  !border-b-2 !border-turquoise;
+
+    }
+
+    .field-wrap:focus-within {
+        @apply  !border-b-2 !border-turquoise;
+
+    }
+
+    .checkbox-wrap,
+    .submit-wrap {
+        @apply !border-0;
     }
 
     .nf-pass.field-wrap .nf-field-element:after {
@@ -60,7 +74,7 @@ main {
     }
 
     .nf-element[value="Absenden"] {
-        @apply !bg-turquoise cursor-pointer hover:text-slate-300 !p-2;
+        @apply !bg-turquoise cursor-pointer hover:text-slate-300 !p-2 ;
     }
 
     .checkbox-wrap {

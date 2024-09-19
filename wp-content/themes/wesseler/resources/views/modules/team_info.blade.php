@@ -25,6 +25,7 @@
                             {!! $teamInfo !!} 
                         </div>
                         
+                        
                         <div class="text-left">
 
                             @if ( $teamEmail == '' && $teamTelefon == '' )

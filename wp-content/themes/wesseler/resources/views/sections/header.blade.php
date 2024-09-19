@@ -20,11 +20,9 @@
       {{-- BURGER MENU 🍔 --}}
 
       <div class=" flex justify-between items-center p-2 md:hidden" >
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" id="burger-button" class=" w-8 cursor-pointer">
-              <path fill-rule="evenodd" d="M2 4.75A.75.75 0 0 1 2.75 4h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 4.75ZM2 10a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 10Zm0 5.25a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
-          </svg>
-          <svg fill="#000000" height="20px" width="20px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-          viewBox="0 0 490 490" xml:space="preserve">
+        <div  class="relative w-8 h-6 mr-4" id="burger-button">
+
+        </div>
       </div>
 
       <nav class=" flex-col bg-gray  items-center hidden-menu w-full h-full transition-all duration-700 fixed z-40 p-10 overflow-y-scroll  md:static md:p-8 md:bg-white  md:overflow-y-visible  primary-nav">
