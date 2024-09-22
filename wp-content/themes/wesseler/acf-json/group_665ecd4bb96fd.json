@@ -113,38 +113,6 @@
                     "min": "",
                     "max": ""
                 },
-                "layout_665ee5a80fc02": {
-                    "key": "layout_665ee5a80fc02",
-                    "name": "button",
-                    "label": "button",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_665ee5b50fc05",
-                            "label": "button",
-                            "name": "button",
-                            "aria-label": "",
-                            "type": "clone",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "clone": [
-                                "group_665ed26602e94"
-                            ],
-                            "display": "seamless",
-                            "layout": "block",
-                            "prefix_label": 0,
-                            "prefix_name": 0
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
                 "layout_665ee96aa56a9": {
                     "key": "layout_665ee96aa56a9",
                     "name": "accordion",
@@ -626,5 +594,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1726779756
+    "modified": 1727016649
 }

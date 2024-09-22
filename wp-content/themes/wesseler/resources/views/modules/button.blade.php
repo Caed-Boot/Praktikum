@@ -13,7 +13,6 @@
         $place = 'justify-end';
     };
 @endphp
-
 <div class="flex {{$place}}">
     <a href="{{ $buttonUrl }}" class="border border-turquoise text-turquoise p-4 hover:bg-turquoise hover:text-white transition-all duration-200">
         {{ $buttonTitle }}

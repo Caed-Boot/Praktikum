@@ -1,14 +1,22 @@
 .swiper {
     .swiper-button-prev::after,
     .swiper-button-next::after{
-        @apply h-auto text-white scale-50 md:scale-100;
+        @apply h-auto text-white scale-50 md:scale-100
+        lg:scale-125;
     }
     .swiper-button-next,
     .swiper-button-prev {
-        @apply w-[50px] h-[50px] absolute top-[85%] scale-50 border-2 border-white p-4 rounded-full;
+        @apply w-[50px] h-[50px] absolute top-[85%] scale-50 border-2 border-white p-4 rounded-full
+        md:w-[100px]
+        md:h-[100px]
+        xl:w-[125px]
+        xl:h-[125px];
     }
     .swiper-button-prev {
-        @apply left-[70%];
+        @apply left-[70%]
+        md:left-[75%]
+        xl:left-[80%];
+        
     }
     .swiper__overlap {
         background-color: rgba(0, 0, 0, 0.975);

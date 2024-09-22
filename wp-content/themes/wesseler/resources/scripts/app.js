@@ -4,7 +4,6 @@ import {imageTextObserver } from './util/fadeObserver';
 import { initAccordion } from './util/accordion';
 import { initBurgerMenu } from './util/burgerMenu';
 import { initSubmemuHeader } from './util/submenuHeader';
-import { initFormValidation } from './util/form';
 import { historyObserver } from './util/historyObserver';
 import { initParallax } from './util/parallax';
 import { initLoadBody } from './util/loadBody';
@@ -21,7 +20,6 @@ domReady(async () => {
     initLoadBody()
     initParallax()
     historyObserver()
-    initFormValidation()
     initBurgerMenu()
     initAccordion()
     imageTextObserver()

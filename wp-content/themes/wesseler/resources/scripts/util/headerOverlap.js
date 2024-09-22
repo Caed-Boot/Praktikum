@@ -3,11 +3,11 @@ function initOverlap () {
     const overlap = document.querySelector('.swiper__overlap')
     const overlapTitle = document.querySelector('.swiper__overlap-title')
 
-    console.log(overlapTitle);
     
     setTimeout(() => {
 
-        overlapTitle.classList.add('transition-all','duration-500')
+        overlapTitle.classList.add('transition-all')
+        overlapTitle.classList.add('duration-500')
         overlapTitle.classList.remove('opacity-0')
         
         setTimeout(() => {

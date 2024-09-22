@@ -1,0 +1,73 @@
+.nf-form-cont {
+    @apply w-[80%] mx-auto md:w-[70%] lg:w-[50%];
+
+    * {
+        @apply bg-white border-0 p-0;
+    }
+
+    .nf-error.listimage-wrap .nf-field-element ul, .nf-error .ninja-forms-field {
+        @apply border-0;
+    }
+
+    .nf-element {
+        @apply pt-4;
+    }
+
+    .field-wrap {
+        @apply  border-b-2 border-slate-600;
+    
+        input::placeholder{
+        @apply text-white;
+        }
+        &:current {
+            @apply border-turquoise;
+        }
+    }
+
+    .nf-form-fields-required {
+        @apply hidden;
+    }
+
+    .nf-element:focus-visible {
+        @apply outline-0;
+    }
+
+    .field-wrap:focus-within {
+        @apply  border-b-2 border-turquoise;
+    }
+
+    .checkbox-wrap,
+    .submit-wrap {
+        @apply border-0;
+    }
+
+    .nf-field-label label {
+        @apply font-normal;
+    }
+s
+    .nf-error-msg,
+    .nf-error-required-error,
+    .ninja-forms-req-symbol,
+    .nf-field-element:after,
+    .nf-field-description p a{
+        @apply text-turquoise;
+
+    }
+
+    .checkbox-wrap {
+        @apply !border-0;
+    }
+
+    .nf-element[type=checkbox] {
+        @apply relative w-5 h-5;
+        
+    }
+
+    .nf-element[type=submit] {
+        @apply bg-turquoise text-white transition-all duration-200 cursor-pointer hover:text-slate-200 p-2 ;
+    }
+
+    .checkbox-wrap {
+        @apply flex flex-col hyphens-auto;
+    }
+}

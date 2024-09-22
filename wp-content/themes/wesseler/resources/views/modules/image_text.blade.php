@@ -7,15 +7,16 @@
     $buttonImgText = isset($data['button']) ? $data['button'] : '';
     $buttonTitle = isset($buttonImgText['title']) ? $buttonImgText['title'] : '';
     $buttonUrl = isset($buttonImgText['url']) ? $buttonImgText['url'] : '';
+    $buttonPosition = isset($data['position_button']) ? $data['position_button'] : '';
     $textAlign = '';
-
-    if ($order == 'rechts') {
+    if ($order == 'rechts' || $buttonPosition == 'rechts') {
         $order = 'order-1';
-        $position = 'left';
         $textAlign = 'hidden md:block text-right pr-10 lg:pr-0';
+        $buttonPosition = 'justify-end';
     } else {
         $order = 'order-0';
         $position = 'right';
+        $buttonPosition = 'justify-start';
     }
 @endphp
 
@@ -26,11 +27,9 @@
         <div class="space-y-6 mb-8 md:w-2/5 card__text">
             {!! $text !!}
             @if ($buttonTitle)
-                <div class="flex md:justify-start button">
-                    <a href="{{ $buttonUrl }}">
-                        <button class="border-2 border-turquoise py-3 px-6 transition-all duration-300 mr-auto hover:bg-turquoise button__container">
-                            <span class="text-turquoise transition-all duration-300 button__text">{{ $buttonTitle }}</span>
-                        </button>
+                <div class="flex {{ $buttonPosition }}">
+                    <a href="{{ $buttonUrl }}" class="border border-turquoise text-turquoise p-4 hover:bg-turquoise hover:text-white transition-all duration-200">
+                        {{ $buttonTitle }}
                     </a>
                 </div>
             @endif

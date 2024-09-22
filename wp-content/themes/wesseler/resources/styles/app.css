@@ -4,8 +4,7 @@
 @import 'scss/_slider.scss';
 @import 'scss/_accordion.scss';
 @import 'scss/_gridTeam.scss';
-@import 'scss/_formulas.scss';
-@import 'scss/_mediaQueries.scss';
+@import 'scss/_formular.scss';
 @import 'scss/_media-text.scss';
 @import 'scss/_image_video.scss';
 
@@ -15,6 +14,15 @@
 
 
 @layer base {
+
+    ::-webkit-scrollbar {
+        @apply w-2 rounded-md bg-transparent;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        @apply rounded-full bg-turquoise;
+    }
+
     p, ul {
         @apply text-m-primary lg:text-d-primary ;
     }
@@ -43,4 +51,14 @@
     h6{
         @apply text-m-second lg:text-d-second;
     }
+
+    html {
+        @apply font-barlow;
+      }
+    
+      h1, h3,
+      .h1, .h3 {
+        @apply font-crimson;
+      }
+    
 }

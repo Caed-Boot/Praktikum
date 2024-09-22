@@ -1,41 +1,22 @@
 .hidden-menu {
-
     transform: translateY(-110vh);
 }
 
 #burger-button::before {
     content: '';
-    position: absolute;
-    width: 85%;
-    height: 100%;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
+    @apply absolute w-[85%] h-full border-y-2;
 }
 
 #burger-button::after {
     content: '';
-    position: absolute;
-    width: 50%;
-    height: 0;
-
-    border: 1px solid black;
-    left: 0;
-    right: 0;
-    top: 49%;
-    bottom: 0;
+    @apply absolute w-[50%] h-0 border left-0 right-0 top-[49%] bottom-0;
 }
-
-
-
 .primary-nav {
-  
     @apply md:translate-y-0 md:w-full ;
-
     ul {
         @apply flex relative md:justify-end md:flex-row md:m-0 md:px-8;
 
         li {
-
             @apply  font-medium md:relative mt-2 md:text-slate-800 md:mt-0 md:hover:text-turquoise md:leading-9  lg:text-d-primary lg:leading-9 transition-colors duration-200;
 
             ul {
@@ -44,7 +25,6 @@
 
             ul li {
             @apply text-m-primary md:bg-white md:p-2 md:right-2 lg:leading-10;
-
             }
 
             &:last-child
@@ -52,7 +32,6 @@
                 @apply border p-4 w-fit md:w-auto md:py-0 md:px-2 border-turquoise text-turquoise
                 hover:bg-turquoise hover:text-slate-50 ;
             }
-
         }
 
         li:hover ul {
@@ -70,9 +49,7 @@
         li:first-child div {
             @apply inline-block;
         }
-
         .sub-menu {
-
             @apply h-0 md:hidden md:h-auto;
     
             li div {
@@ -82,9 +59,7 @@
             li:last-child {
                 @apply text-white border-0 p-0 md:p-2 md:text-black hover:bg-white hover:text-turquoise; 
             }
-    
         }
     }
-    
 }
 
