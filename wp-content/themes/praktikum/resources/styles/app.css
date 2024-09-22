@@ -1,8 +1,5 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
-
 @import '/scss/_main.scss';
+@import '/scss/_imageText.scss';
 @import '/scss/_navigation.scss';
 @import '/scss/_slider.scss';
 @import '/scss/_text.scss';
@@ -13,9 +10,13 @@
 @import '/scss/_schreiner.scss';
 @import '/scss/_service.scss';
 @import '/scss/_banner.scss';
-@import '/scss/_imageText.scss';
 @import '/scss/_mediaQueries.scss';
 @import '/scss/_forms.scss';
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
 
 @font-face {
     font-family: 'Crimson Pro';

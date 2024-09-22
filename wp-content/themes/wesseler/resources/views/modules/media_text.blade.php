@@ -7,8 +7,7 @@
   $styleClass = $style == 'styleOne' ? 'flex-col' : '';
 @endphp
 
-@dump($data)
-
+@include('components.anchor')
 <div id="media_text" class="media-text media-text-overlay bg-gradient-to-t
 from-black/60 from-40% to-black/45 to-95%
 md:from-black/60 md:from-0 md:to-transparent
@@ -19,7 +18,7 @@ md:h-screen md:max-h-[1000px] md:py-0 md:px-28 md:mb-0">
   md:justify-between md:h-full">
     @if( $style == 'styleOne')
       @if( $textTop )
-        <div class="content-top mb-10  text-center font-light
+        <div class="content-top mb-10 opacity-0 text-center font-light
          md:flex
          md:justify-start
         ">

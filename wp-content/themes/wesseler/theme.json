@@ -1229,12 +1229,12 @@
       "customFontSize": false,
       "fontFamilies": [
         {
-          "fontFamily": "Barlow",
+          "fontFamily": "Barlow,sans-serif",
           "name": "Barlow",
           "slug": "barlow"
         },
         {
-          "fontFamily": "\"Crimson Pro\"",
+          "fontFamily": "\"Crimson Pro\",serif",
           "name": "\"Crimson Pro\"",
           "slug": "crimson"
         }
@@ -1264,46 +1264,6 @@
           "name": "xl",
           "size": "1.25rem",
           "slug": "xl"
-        },
-        {
-          "name": "2xl",
-          "size": "1.5rem",
-          "slug": "2xl"
-        },
-        {
-          "name": "3xl",
-          "size": "1.875rem",
-          "slug": "3xl"
-        },
-        {
-          "name": "4xl",
-          "size": "2.25rem",
-          "slug": "4xl"
-        },
-        {
-          "name": "5xl",
-          "size": "3rem",
-          "slug": "5xl"
-        },
-        {
-          "name": "6xl",
-          "size": "3.75rem",
-          "slug": "6xl"
-        },
-        {
-          "name": "7xl",
-          "size": "4.5rem",
-          "slug": "7xl"
-        },
-        {
-          "name": "8xl",
-          "size": "6rem",
-          "slug": "8xl"
-        },
-        {
-          "name": "9xl",
-          "size": "8rem",
-          "slug": "9xl"
         },
         {
           "name": "m-second",

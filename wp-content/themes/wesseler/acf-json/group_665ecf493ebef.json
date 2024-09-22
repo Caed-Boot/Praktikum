@@ -1,18 +1,18 @@
 {
-    "key": "group_665edfe7450ff",
-    "title": "Text",
+    "key": "group_665ecf493ebef",
+    "title": "Image text",
     "fields": [
         {
-            "key": "field_66ec0b4e7a4f1",
-            "label": "Titel mit Türkisgrün Untertitel",
-            "name": "turquoise_title",
+            "key": "field_665ed2adfdbac",
+            "label": "Title",
+            "name": "title",
             "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "70",
+                "width": "",
                 "class": "",
                 "id": ""
             },
@@ -23,33 +23,7 @@
             "append": ""
         },
         {
-            "key": "field_66ec1d25e53f4",
-            "label": "Position für den Untertitel",
-            "name": "position_untertitel",
-            "aria-label": "",
-            "type": "radio",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "30",
-                "class": "",
-                "id": ""
-            },
-            "choices": {
-                "links": "Links",
-                "mitte": "Mitte",
-                "rechts": "Rechts"
-            },
-            "default_value": "",
-            "return_format": "value",
-            "allow_null": 0,
-            "other_choice": 0,
-            "layout": "vertical",
-            "save_other_choice": 0
-        },
-        {
-            "key": "field_665edfe706a38",
+            "key": "field_665ecf63cd2e4",
             "label": "text",
             "name": "text",
             "aria-label": "",
@@ -58,7 +32,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "80",
                 "class": "",
                 "id": ""
             },
@@ -69,25 +43,50 @@
             "delay": 0
         },
         {
-            "key": "field_6686d7a5bd6dc",
-            "label": "button text",
-            "name": "button_text",
+            "key": "field_665ecf49cd2e3",
+            "label": "Image",
+            "name": "image",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "thumbnail"
+        },
+        {
+            "key": "field_665eeb33b8af7",
+            "label": "button",
+            "name": "button",
             "aria-label": "",
             "type": "link",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "60",
                 "class": "",
                 "id": ""
             },
             "return_format": "array"
         },
         {
-            "key": "field_66eaa53e0121e",
-            "label": "position",
-            "name": "position",
+            "key": "field_6661a5f7bc815",
+            "label": "radio button",
+            "name": "radio_button",
             "aria-label": "",
             "type": "radio",
             "instructions": "",
@@ -99,9 +98,8 @@
                 "id": ""
             },
             "choices": {
-                "left": "left",
-                "center": "center",
-                "right": "right"
+                "links": "Links",
+                "rechts": "Rechts"
             },
             "default_value": "",
             "return_format": "value",
@@ -116,7 +114,7 @@
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "post"
+                "value": "page"
             }
         ]
     ],
@@ -129,5 +127,5 @@
     "active": false,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1726956551
+    "modified": 1726841868
 }

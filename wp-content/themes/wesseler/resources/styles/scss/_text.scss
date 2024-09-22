@@ -1,44 +1,10 @@
 .text-only {
-
-
-    .text__turquoise-title {
-        position: relative;
-    }
-
-    h2::after{
-        position: absolute;
-        color: turquoise;
-        font-size: 1.75rem;
-        border: 1px solid black;
-        bottom: 0;
-        top: -4rem;
-        right: 0;
-        left: 0;
-    }
-
-
     img {
         @apply mx-auto mb-4 md:mx-0 md:w-96;
     }
-
     ul {
-        list-style: disc;
-
         li {
-            margin-bottom: 1.375rem ;
-            @apply text-center md:text-left;
-
+            @apply mb-[1.375rem];
         }
-    }
-
-    p,
-    h2,
-    h4,
-    h5,
-    h6 {
-        @apply text-center md:text-left;
-    }
-    
-
-    
+    }    
 }

@@ -1,31 +1,17 @@
-
 .accordion-body{
-    display: grid;
-    grid-template-rows: 0fr;
-    justify-content: center;
-
-
+   
+    @apply grid grid-rows-[0fr];
 }
-
 .accordion-body-show {
     grid-template-rows: 1fr;
 
 }
-
-.accordion-body > div {
-    
-
+.accordion-body > li {
     @apply mx-auto space-y-4 overflow-hidden w-10/12 transition-all duration-300;
 }
-
-.accordion-body div p {
+.accordion-body li p {
     @apply py-4
 }
-
 .accordion-title {
-    @apply border-b-[1px] border-turquoise;
-}
-
-.accordion-title:first-child {
-    @apply border-t-[1px];
+    @apply border-b border-turquoise first:border-t;
 }

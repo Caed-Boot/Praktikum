@@ -11,11 +11,9 @@
     @if ($overlay =='ein')
         
       <div class="swiper__overlap absolute opacity-50 bottom-0 top-0 w-full z-10 transition-all duration-500 h-full">
-
-
       </div>
 
-      <h1 class="absolute z-30 text-d-h5 text-slate-50 opacity-0 px-5 swiper__overlap-title md:px-[15rem]">  </h1>
+      <h1 class="absolute z-30 text-slate-50 opacity-0 px-5 swiper__overlap-title md:px-[15rem]">  </h1>
 
     @endif
       
@@ -36,14 +34,9 @@
           <!-- If we need pagination -->
 
       
-      <div class="absolute swiper-button-prev "></div>
+      <div class="absolute swiper-button-prev 
+      "></div>
       
       <div class="swiper-button-next"></div>
-
-
-
-
-      
-        
   </div>
   @endif

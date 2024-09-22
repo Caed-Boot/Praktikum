@@ -1,50 +1,19 @@
 .swiper {
-
     .swiper-button-prev::after,
     .swiper-button-next::after{
-    
-        height: auto;
-        color: white;
-        scale: 0.5;
+        @apply h-auto text-white scale-50 md:scale-100;
     }
-    
-
     .swiper-button-next,
     .swiper-button-prev {
-
-        width: 50px;
-        height: 50px;
-        position: absolute;
-        top: 85%;
-        scale: 0.5;
-        border: 2px solid white;
-        padding: 4px;
-        border-radius: 50%;
-
+        @apply w-[50px] h-[50px] absolute top-[85%] scale-50 border-2 border-white p-4 rounded-full;
     }
-
     .swiper-button-prev {
-
-        position: absolute;
-        top: 85%;
-        left: 70%;
-        padding: 4px;
-        scale: 0.5;
-
+        @apply left-[70%];
     }
-
     .swiper__overlap {
         background-color: rgba(0, 0, 0, 0.975);
     }
-
     .swiper__overlap-title {
-        width: 100%;
-        top: 50%;
-        text-align: center;
+        @apply w-full top-[50%] text-center after:content-['Estrichbau_Wesseler'];
     }
-
-    .swiper__overlap-title::after {
-        content: 'Estrichbau Wesseler';
-    }
-
 }    

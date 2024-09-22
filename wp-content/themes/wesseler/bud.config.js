@@ -23,7 +23,7 @@ export default async (app) => {
    *
    * @see {@link https://bud.js.org/reference/bud.setPublicPath}
    */
-  app.setPublicPath('/app/themes/wesseler/public/');
+  app.setPublicPath('/wp-content/themes/wesseler/public/');
 
   /**
    * Development server settings
@@ -33,8 +33,8 @@ export default async (app) => {
    * @see {@link https://bud.js.org/reference/bud.watch}
    */
   app
-    .setUrl('http://wesseler.ddev.site:3000')
-    .setProxyUrl('http://wesseler.ddev.site')
+    .setUrl('http://praktikum.ddev.site:3000')
+    .setProxyUrl('http://praktikum.ddev.site')
     .watch(['resources/views', 'app']);
 
   /**
