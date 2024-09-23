@@ -29,11 +29,6 @@
         <div class="space-y-6 mb-8 md:w-2/5 card__text">
             {!! $text !!}
             @include('modules.button')
-                {{-- <div class="flex {{ $buttonPosition }}">
-                    <a href="{{ $buttonUrl }}" class="border border-turquoise text-turquoise p-4 hover:bg-turquoise hover:text-white transition-all duration-200">
-                        {{ $buttonTitle }}
-                    </a>
-                </div> --}}
         </div>
     </div>
 </div>

@@ -21,15 +21,11 @@
                 $circlePosition ="circle-design circle-left";
             }
         @endphp
-
-
         <div class="flex flex-col mb-12 gap-4 md:w-[40%] {{$marginPosition}} transition-all duration-1000  history">
             <div class="relative {{$textPosition}}">
                 <span class="relative history__title text-m-primary lg:text-d-h3 {{$circlePosition}}"> {{$historyYear}} </span>
             </div>
-
-            @if ($historyTitle == '' && $historyUrl =='')
-                
+            @if ($historyTitle == '' || $historyUrl =='')
             @else
                 <span class="{{$textPosition}} lg:text-d-h2"> {{ $historyTitle }} </span>
                 <img src="{{ $historyUrl }}" class="">
@@ -39,6 +35,5 @@
             </div>
         </div>
     @endforeach
-
 </section>
 
