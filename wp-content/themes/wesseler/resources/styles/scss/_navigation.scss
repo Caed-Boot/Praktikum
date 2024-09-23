@@ -46,8 +46,8 @@
             @apply hidden;
         }
 
-        li:first-child div {
-            @apply inline-block;
+        li div {
+            @apply first:inline-block;
         }
         .sub-menu {
             @apply h-0 md:hidden md:h-auto;

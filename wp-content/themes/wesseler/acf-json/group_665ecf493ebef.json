@@ -111,7 +111,7 @@
         {
             "key": "field_66f03b7b1466a",
             "label": "Position Knopf",
-            "name": "position_button",
+            "name": "position",
             "aria-label": "",
             "type": "radio",
             "instructions": "",
@@ -130,6 +130,7 @@
             "return_format": "value",
             "allow_null": 0,
             "other_choice": 0,
+            "allow_in_bindings": 1,
             "layout": "vertical",
             "save_other_choice": 0
         }
@@ -152,5 +153,5 @@
     "active": false,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1727019994
+    "modified": 1727089647
 }

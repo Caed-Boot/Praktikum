@@ -70,23 +70,24 @@
         },
         {
             "key": "field_6686d7a5bd6dc",
-            "label": "button text",
-            "name": "button_text",
+            "label": "Button",
+            "name": "button",
             "aria-label": "",
             "type": "link",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "70",
                 "class": "",
                 "id": ""
             },
-            "return_format": "array"
+            "return_format": "array",
+            "allow_in_bindings": 1
         },
         {
-            "key": "field_66eaa53e0121e",
-            "label": "position",
+            "key": "field_66f149940568d",
+            "label": "Position vom Knopf",
             "name": "position",
             "aria-label": "",
             "type": "radio",
@@ -94,19 +95,20 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "30",
                 "class": "",
                 "id": ""
             },
             "choices": {
-                "left": "left",
-                "center": "center",
-                "right": "right"
+                "links": "Links",
+                "mitte": "Mitte",
+                "rechts": "Rechts"
             },
             "default_value": "",
             "return_format": "value",
             "allow_null": 0,
             "other_choice": 0,
+            "allow_in_bindings": 0,
             "layout": "vertical",
             "save_other_choice": 0
         }
@@ -129,5 +131,5 @@
     "active": false,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1726956551
+    "modified": 1727089573
 }

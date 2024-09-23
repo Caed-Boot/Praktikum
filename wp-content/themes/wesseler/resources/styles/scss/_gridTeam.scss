@@ -1,8 +1,5 @@
 .grid-team {
-
-    
     .grid-team__info {
-        
         h5 {
             @apply font-medium md:text-d-h5;
         }
@@ -10,7 +7,6 @@
 
             @apply hyphens-auto text-m-primary md:text-d-primary;
         }
-
          a{
             hyphens: auto;
             @apply text-m-second md:text-d-second;

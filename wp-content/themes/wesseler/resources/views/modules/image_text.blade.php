@@ -9,14 +9,16 @@
     $buttonUrl = isset($buttonImgText['url']) ? $buttonImgText['url'] : '';
     $buttonPosition = isset($data['position_button']) ? $data['position_button'] : '';
     $textAlign = '';
-    if ($order == 'rechts' || $buttonPosition == 'rechts') {
+    if ($order == 'rechts') {
         $order = 'order-1';
         $textAlign = 'hidden md:block text-right pr-10 lg:pr-0';
         $buttonPosition = 'justify-end';
     } else {
         $order = 'order-0';
         $position = 'right';
-        $buttonPosition = 'justify-start';
+    }
+    if ($buttonPosition == 'rechts') {
+        $buttonPosition = 'justify-end';
     }
 @endphp
 
@@ -26,13 +28,12 @@
         <img src="{{$imageSrc}}" class="mb-8 object-cover object-center md:w-1/2 lg:w-3/5 card__img {{$order}} ">
         <div class="space-y-6 mb-8 md:w-2/5 card__text">
             {!! $text !!}
-            @if ($buttonTitle)
-                <div class="flex {{ $buttonPosition }}">
+            @include('modules.button')
+                {{-- <div class="flex {{ $buttonPosition }}">
                     <a href="{{ $buttonUrl }}" class="border border-turquoise text-turquoise p-4 hover:bg-turquoise hover:text-white transition-all duration-200">
                         {{ $buttonTitle }}
                     </a>
-                </div>
-            @endif
+                </div> --}}
         </div>
     </div>
 </div>
